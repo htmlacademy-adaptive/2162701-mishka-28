@@ -9,29 +9,55 @@
 
 <body>
 
-  <header class="main-header">
-    <a class="main-header__logo-link" href="#">
-      <img class="main-header__logo-image" src="../source/img/mishka-logo-mobile.svg" width="86" height="35"
-        alt="Логотип мишка.">
-    </a>
-    <button class="main-header__button" type="button">
-      <span class="visually-hidden">Меню</span>
-    </button>
+  <header class="main-header container">
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__logo-link" href="#">
+            <img class="main-nav__logo-image" src="../source/img/mishka-logo-mobile.svg" width="86" height="35"
+              alt="Логотип мишка.">
+          </a>
+          <button class="main-nav__button" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">
+            Вязание на заказ
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
+            Поиск по сайту
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="main-container">
+  <main class="main-container container">
     <h1 class="visually-hidden">Магазин вязанных изделий для интерьера</h1>
 
-    <section class="header">
-      <h2 class="title header__title">Милые штуки ручной работы для дома</h2>
-      <ul class="header__list">
-        <li class="header__item header__item_interior">
-          <a class="header__link" href="#">
+    <section class="hero">
+      <h2 class="title hero__title">Милые штуки ручной работы для дома</h2>
+      <ul class="hero__list">
+        <li class="hero__item hero__item_interior">
+          <a class="hero__link" href="#">
             Предметы интерьера
           </a>
         </li>
-        <li class="header__item header-item_toys">
-          <a class="header__link" href="#">
+        <li class="hero__item hero__item_toys">
+          <a class="hero__link" href="#">
             Детские игрушки
           </a>
         </li>
@@ -40,7 +66,7 @@
 
     <article class="week-product">
       <h2 class="title week-product__title">Вязаные корзинки</h2>
-      <span class="week-product__offer">ТОВАР НЕДЕЛИ</span>
+      <span class="week-product__offer">Товар недели</span>
       <p class="week-product__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
       </p>
@@ -55,7 +81,7 @@
       <img class="week-product__image" src="../source/img/index/knitted-baskets.jpg" width="260" height="315"
         alt="Вязаные корзинки.">
       <span class="week-product__price">Цена: 990 руб.</span>
-      <button class="button week-product__button" type="button">ЗАКАЗАТЬ</button>
+      <button class="button week-product__button" type="button">Заказать</button>
     </article>
 
     <section class="about-shop">
@@ -95,7 +121,8 @@
       </div>
       <div class="reviews__slider">
         <p class="reviews__description">
-          Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+          Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+          инстамамочек. В отчаянии, я накупила аксессуаров
           и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
         </p>
         <span class="reviews__name">Екатерина Красильникова</span>
@@ -103,7 +130,8 @@
       </div>
       <div class="reviews__slider">
         <p class="reviews__description">
-          Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+          Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у
+          популярных инстамамочек. В отчаянии, я накупила аксессуаров
           и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
         </p>
         <span class="reviews__name">Елена Красильникова</span>
@@ -147,13 +175,13 @@
         width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
-      <button class="button contacts__button" type="button">НАПИШИТЕ НАМ</button>
+      <button class="button contacts__button" type="button">Напишите нам</button>
     </section>
 
   </main>
 
-  <footer class="main-footer">
-    <ul class="social__list">
+  <footer class="main-footer container">
+    <ul class="social main-footer__social-list">
       <li class="social__item">
         <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">ВК</span>
@@ -170,12 +198,39 @@
         </a>
       </li>
     </ul>
-    <p class="main-footer__text">Разработано</p>
+    <span class="main-footer__text">Разработано</span>
     <a class="main-footer__link" href="https://htmlacademy.ru/">
       <img class="main-footer__logo-image" src="../source/img/htmlacademy-logo.svg" width="27" height="34"
         alt="Логотип html academy.">
     </a>
   </footer>
+
+  <div class="modal">
+    <section class="modal__feedback">
+      <h2 class="title modal__title">Добавить в корзину</h2>
+      <span class="modal__text">Выберите размер:</span>
+      <ol class="modal__list">
+        <li class="modal__item">
+          <button class="modal__button-size current" type="button">
+            <span class="modal__button-text">S</span>
+          </button>
+        </li>
+        <li class="modal__item">
+          <button class="modal__button-size" type="button">
+            <span class="modal__button-text">M</span>
+          </button>
+        </li>
+        <li class="modal__item">
+          <button class="modal__button-size" type="button">
+            <span class="modal__button-text">L</span>
+          </button>
+        </li>
+      </ol>
+      <button class="button modal__button">
+        <span class="button__text">Добавить</span>
+      </button>
+    </section>
+  </div>
 
 </body>
 
