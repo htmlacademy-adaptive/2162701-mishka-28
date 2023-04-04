@@ -10,20 +10,44 @@
 
 <body>
 
-  <header class="main-header">
-    <a class="main-header__logo-link" href="index.html">
+  <header class="main-header container">
+    <a class="main-header__logo-link" href="#">
       <img class="main-header__logo-image" src="../source/img/mishka-logo-mobile.svg" width="86" height="35"
         alt="Логотип мишка.">
     </a>
     <button class="main-header__button" type="button">
       <span class="visually-hidden">Меню</span>
     </button>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">
+            Вязание на заказ
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
+            Поиск по сайту
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="main-container">
+  <main class="main-container container">
 
     <section class="header-form">
-      <h1 class="title header__title">Вязание на заказ</h1>
+      <h1 class="title header-form__title">Вязание на заказ</h1>
     </section>
 
     <section class="order-form">
@@ -34,18 +58,18 @@
         уточнить детали.
       </p>
       <form class="order-form__form">
-        <fieldset class="order-form__filter">
-          <legend class="filter__title">ТИП</legend>
+        <fieldset class="filter order-form__filter">
+          <legend class="title-form filter__title">Тип</legend>
           <ul class="filter__list">
             <li class="filter__item">
-              <label class="control__label">
+              <label class="control">
                 <input class="visually-hidden" type="radio" name="fat-content" value="interior accessory" checked>
                 <span class="control__input"></span>
                 <span class="control__descr">Аксессуар для интерьера</span>
               </label>
             </li>
             <li class="filter__item">
-              <label class="control__label">
+              <label class="control">
                 <input class="visually-hidden" type="radio" name="fat-content" value="children's toy">
                 <span class="control__input"></span>
                 <span class="control__descr">Детская игрушка</span>
@@ -53,46 +77,46 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-form__filter">
-          <legend class="filter__title">ЦВЕТ</legend>
+        <fieldset class="filter order-form__filter">
+          <legend class="title-form filter__title">Цвет</legend>
           <ul class="filter__list">
             <li class="filter__item">
-              <label class="control__label">
+              <label class="control">
                 <input class="visually-hidden" type="checkbox" name="fat-content" value="white" checked>
                 <span class="control__input"></span>
                 <span class="control__descr">Белый</span>
               </label>
             </li>
             <li class="filter__item">
-              <label class="control__label">
+              <label class="control">
                 <input class="visually-hidden" type="checkbox" name="fat-content" value="grey" checked>
                 <span class="control__input"></span>
                 <span class="control__descr">Серый</span>
               </label>
             </li>
             <li class="filter__item">
-              <label class="control__label">
+              <label class="control">
                 <input class="visually-hidden" type="checkbox" name="fat-content" value="tiffany">
                 <span class="control__input"></span>
                 <span class="control__descr">Тиффани</span>
               </label>
             </li>
             <li class="filter__item">
-              <label class="control__label">
+              <label class="control">
                 <input class="visually-hidden" type="checkbox" name="fat-content" value="black">
                 <span class="control__input"></span>
                 <span class="control__descr">Черный</span>
               </label>
             </li>
             <li class="filter__item">
-              <label class="control__label">
+              <label class="control">
                 <input class="visually-hidden" type="checkbox" name="fat-content" value="pink">
                 <span class="control__input"></span>
                 <span class="control__descr">Розовый</span>
               </label>
             </li>
             <li class="filter__item">
-              <label class="control__label">
+              <label class="control">
                 <input class="visually-hidden" type="checkbox" name="fat-content" value="orange">
                 <span class="control__input"></span>
                 <span class="control__descr">Оранжевый</span>
@@ -100,8 +124,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-form__form">
-          <legend class="filter__title">ФИО</legend>
+        <fieldset class="filter form order-form__form">
+          <legend class="title-form filter__title">ФИО</legend>
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="firstname">Имя:</label>
@@ -120,29 +144,29 @@
             </li>
           </ul>
         </fieldset>
-        <label class="form-label__title" for="phone">
+        <label class="title-form order-form__label-title" for="phone">
           Телефон
         </label>
-        <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-        <label class="form-label__title" for="email">
+        <input class="order-form__input" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        <label class="title-form order-form__label-title" for="email">
           E-mail
         </label>
-        <input class="form__input" id="email" type="email" placeholder="Ваш Email*" name="email" required>
-        <label class="form-label__title" for="message">
+        <input class="order-form__input" id="email" type="email" placeholder="Ваш Email*" name="email" required>
+        <label class="title-form order-form__label-title" for="message">
           Доп
         </label>
-        <textarea class="form__textarea" id="message" maxlength="1000" rows="6" name="comment"
+        <textarea class="order-form__textarea" id="message" maxlength="1000" rows="6" name="comment"
           placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        <p class="form__descr">*Поля обязательны для заполнения</p>
-        <button class="button order-form__button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+        <p class="order-form__descr">*Поля обязательны для заполнения</p>
+        <button class="button order-form__button" type="submit">Отпраить заказ</button>
       </form>
 
     </section>
 
   </main>
 
-  <footer class="main-footer">
-    <ul class="social__list">
+  <footer class="main-footer container">
+    <ul class="social main-footer__social-list">
       <li class="social__item">
         <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">ВК</span>
@@ -159,7 +183,7 @@
         </a>
       </li>
     </ul>
-    <p class="main-footer__text">Разработано</p>
+    <span class="main-footer__text">Разработано</span>
     <a class="main-footer__link" href="https://htmlacademy.ru/">
       <img class="main-footer__logo-image" src="../source/img/htmlacademy-logo.svg" width="27" height="34"
         alt="Логотип html academy.">

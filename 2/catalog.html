@@ -10,20 +10,44 @@
 
 <body>
 
-  <header class="main-header">
-    <a class="main-header__logo-link" href="index.html">
+  <header class="main-header container">
+    <a class="main-header__logo-link" href="#">
       <img class="main-header__logo-image" src="../source/img/mishka-logo-mobile.svg" width="86" height="35"
         alt="Логотип мишка.">
     </a>
     <button class="main-header__button" type="button">
       <span class="visually-hidden">Меню</span>
     </button>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">
+            Вязание на заказ
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
+            Поиск по сайту
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
+            Корзина: пока пуста
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="main-container">
+  <main class="main-container container">
 
     <section class="header-catalog">
-      <h1 class="title header__title">Каталог товаров</h1>
+      <h1 class="title header-catalog__title">Каталог товаров</h1>
     </section>
 
     <section class="catalog">
@@ -68,8 +92,8 @@
 
   </main>
 
-  <footer class="main-footer">
-    <ul class="social__list">
+  <footer class="main-footer container">
+    <ul class="social main-footer__social-list">
       <li class="social__item">
         <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">ВК</span>
@@ -86,11 +110,38 @@
         </a>
       </li>
     </ul>
-    <p class="main-footer__text">Разработано</p>
+    <span class="main-footer__text">Разработано</span>
     <a class="main-footer__link" href="https://htmlacademy.ru/">
       <img class="main-footer__logo-image" src="../source/img/htmlacademy-logo.svg" width="27" height="34"
         alt="Логотип html academy.">
     </a>
   </footer>
+
+  <div class="modal">
+    <section class="modal__feedback">
+      <h2 class="title modal__title">Добавить в корзину</h2>
+      <span class="modal__text">Выберите размер:</span>
+      <ol class="modal__list">
+        <li class="modal__item">
+          <button class="modal__button-size current" type="button">
+            <span class="modal__button-text">S</span>
+          </button>
+        </li>
+        <li class="modal__item">
+          <button class="modal__button-size" type="button">
+            <span class="modal__button-text">M</span>
+          </button>
+        </li>
+        <li class="modal__item">
+          <button class="modal__button-size" type="button">
+            <span class="modal__button-text">L</span>
+          </button>
+        </li>
+      </ol>
+      <button class="button modal__button">
+        <span class="button__text">Добавить</span>
+      </button>
+    </section>
+  </div>
 
 </body>
