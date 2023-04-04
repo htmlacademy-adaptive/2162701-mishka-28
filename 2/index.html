@@ -207,27 +207,34 @@
   <div class="modal">
     <section class="modal__feedback">
       <h2 class="title modal__title">Добавить в корзину</h2>
-      <span class="modal__text">Выберите размер:</span>
-      <ol class="modal__list">
-        <li class="modal__item">
-          <button class="modal__button-size current" type="button">
-            <span class="modal__button-text">S</span>
+      <form class="modal__form">
+        <fieldset class="modal__filter">
+          <legend class="modal__filter-title">Выберите размер:</legend>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <label class="modal__control">
+                <input class="visually-hidden" type="radio" name="size" value="s" checked>
+                <span class="modal__control-input"></span>
+                <span class="modal__control-descr">S</span>
+            </li>
+            <li class="modal__item">
+              <label class="modal__control">
+                <input class="visually-hidden" type="radio" name="size" value="m">
+                <span class="modal__control-input"></span>
+                <span class="modal__control-descr">M</span>
+            </li>
+            <li class="modal__item">
+              <label class="modal__control">
+                <input class="visually-hidden" type="radio" name="size" value="r">
+                <span class="modal__control-input"></span>
+                <span class="modal__control-descr">R</span>
+            </li>
+          </ul>
+          <button class="button modal__button" type="submit">
+            <span class="button__text">Добавить</span>
           </button>
-        </li>
-        <li class="modal__item">
-          <button class="modal__button-size" type="button">
-            <span class="modal__button-text">M</span>
-          </button>
-        </li>
-        <li class="modal__item">
-          <button class="modal__button-size" type="button">
-            <span class="modal__button-text">L</span>
-          </button>
-        </li>
-      </ol>
-      <button class="button modal__button">
-        <span class="button__text">Добавить</span>
-      </button>
+        </fieldset>
+      </form>
     </section>
   </div>
 
