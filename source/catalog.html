@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Мишка - милые штуки ручнойработы для дома</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../source/img/favicon/favicon.png">
 </head>
 
 <body>
 
-  <header class="main-header container">
-    <a class="main-header__logo-link" href="#">
+  <header class="main-header">
+    <div class="container">
+    <a class="main-header__logo-link" href="index.html">
       <img class="main-header__logo-image" src="../source/img/mishka-logo-mobile.svg" width="86" height="35"
         alt="Логотип мишка.">
     </a>
@@ -41,15 +43,19 @@
         </li>
       </ul>
     </nav>
+    </div>
   </header>
 
-  <main class="main-container container">
+  <main class="main-container">
 
     <section class="header-catalog">
-      <h1 class="title header-catalog__title">Каталог товаров</h1>
+      <div class="container">
+      <h1 class="title header-catalog__title title_size_l">Каталог товаров</h1>
+      </div>
     </section>
 
     <section class="catalog">
+      <div class="container">
       <ul class="catalog__list">
         <li class="catalog__item">
           <img class="catalog__image" src="../source/img/catalog/photo-1-mobile.jpg" width="260" height="195"
@@ -76,10 +82,12 @@
           <button class="catalog__button-basket" type="button" aria-label="добавить в корзину"></button>
         </li>
       </ul>
+      </div>
 
     </section>
 
     <article class="production">
+      <div class="container">
       <h2 class="title production__title">Процесс производства</h2>
       <img class="production__image" src="../source/img/catalog/video-mobile.jpg" width="260" height="150"
         alt="вязанная корзина.">
@@ -87,11 +95,13 @@
         По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
       </p>
       <button class="button production__button" type="button">Сделать заказ</button>
+      </div>
     </article>
 
   </main>
 
-  <footer class="main-footer container">
+  <footer class="main-footer">
+    <div class="container">
     <ul class="social main-footer__social-list">
       <li class="social__item">
         <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">
@@ -114,6 +124,7 @@
       <img class="main-footer__logo-image" src="../source/img/htmlacademy-logo.svg" width="27" height="34"
         alt="Логотип html academy.">
     </a>
+    </div>
   </footer>
 
   <div class="modal">

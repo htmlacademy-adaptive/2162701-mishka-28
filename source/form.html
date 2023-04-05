@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Мишка - милые штуки ручнойработы для дома</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../source/img/favicon/favicon.png">
 </head>
 
 <body>
 
-  <header class="main-header container">
-    <a class="main-header__logo-link" href="#">
+  <header class="main-header">
+    <div class="container">
+    <a class="main-header__logo-link" href="index.html">
       <img class="main-header__logo-image" src="../source/img/mishka-logo-mobile.svg" width="86" height="35"
         alt="Логотип мишка.">
     </a>
@@ -41,16 +43,20 @@
         </li>
       </ul>
     </nav>
+  </div>
   </header>
 
-  <main class="main-container container">
+  <main class="main-container">
 
     <section class="header-form">
-      <h1 class="title header-form__title">Вязание на заказ</h1>
+      <div class="container">
+      <h1 class="title header-form__title title_size_l">Вязание на заказ</h1>
+      </div>
     </section>
 
     <section class="order-form">
 
+      <div class="container">
       <h2 class="visually-hidden">Форма заказа вязанных изделий</h2>
       <p class="order-form__description">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
@@ -159,12 +165,14 @@
         <p class="order-form__descr">*Поля обязательны для заполнения</p>
         <button class="button order-form__button" type="submit">Отпраить заказ</button>
       </form>
+      </div>
 
     </section>
 
   </main>
 
-  <footer class="main-footer container">
+  <footer class="main-footer">
+    <div class="container">
     <ul class="social main-footer__social-list">
       <li class="social__item">
         <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">
@@ -187,6 +195,7 @@
       <img class="main-footer__logo-image" src="../source/img/htmlacademy-logo.svg" width="27" height="34"
         alt="Логотип html academy.">
     </a>
+    </div>
   </footer>
 
 </body>

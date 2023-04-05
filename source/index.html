@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Мишка - милые штуки ручнойработы для дома</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../source/img/favicon/favicon.png">
 </head>
 
 <body>
 
-  <header class="main-header container">
+  <header class="main-header">
+    <div class="container">
     <a class="main-header__logo-link" href="#">
       <img class="main-header__logo-image" src="../source/img/mishka-logo-mobile.svg" width="86" height="35"
         alt="Логотип мишка.">
@@ -41,13 +43,16 @@
         </li>
       </ul>
     </nav>
+  </div>
   </header>
 
-  <main class="main-container container">
+  <main class="main-container">
+
     <h1 class="visually-hidden">Магазин вязанных изделий для интерьера</h1>
 
     <section class="hero">
-      <h2 class="title hero__title">Милые штуки ручной работы для дома</h2>
+      <div class="container">
+      <h2 class="title hero__title title_size_l">Милые штуки ручной работы для дома</h2>
       <ul class="hero__list">
         <li class="hero__item hero__item_interior">
           <a class="hero__link" href="#">
@@ -60,9 +65,11 @@
           </a>
         </li>
       </ul>
+      </div>
     </section>
 
     <article class="week-product">
+      <div class="container">
       <h2 class="title week-product__title">Вязаные корзинки</h2>
       <span class="week-product__offer">Товар недели</span>
       <p class="week-product__description">
@@ -80,9 +87,11 @@
         alt="Вязаные корзинки.">
       <span class="week-product__price">Цена: 990 руб.</span>
       <button class="button week-product__button" type="button">Заказать</button>
+      </div>
     </article>
 
     <section class="about-shop">
+      <div class="container">
       <h2 class="title about-shop__title">Коротко о нас:</h2>
       <ul class="about-shop__list">
         <li class="about-shop__item about-shop__item_flower">
@@ -104,9 +113,11 @@
           Поставляется в подарочной упаковке
         </li>
       </ul>
+      </div>
     </section>
 
     <section class="reviews">
+      <div class="container">
       <h2 class="title reviews__title">Отзывы</h2>
       <div class="reviews__slider slider-open">
         <p class="reviews__description">
@@ -150,9 +161,11 @@
         </svg>
       </button>
       <button class="button reviews__button">Написать</button>
+      </div>
     </section>
 
     <section class="contacts">
+      <div class="container">
       <h2 class="title contacts__title">Контакты</h2>
       <dl class="contacts__list">
         <dt class="contacts__text">e-mail:</dt>
@@ -174,11 +187,13 @@
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
       <button class="button contacts__button" type="button">Напишите нам</button>
+      </div>
     </section>
 
   </main>
 
-  <footer class="main-footer container">
+  <footer class="main-footer">
+    <div class="container">
     <ul class="social main-footer__social-list">
       <li class="social__item">
         <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">
@@ -201,6 +216,7 @@
       <img class="main-footer__logo-image" src="../source/img/htmlacademy-logo.svg" width="27" height="34"
         alt="Логотип html academy.">
     </a>
+    </div>
   </footer>
 
   <div class="modal">
