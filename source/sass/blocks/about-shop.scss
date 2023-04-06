@@ -1,5 +1,5 @@
 .about-shop__title {
-  padding: 31px 0 28px 0;
+  padding: 31px 0 46px 0;
 }
 
 .about-shop__list {
@@ -21,5 +21,51 @@
     background-image: url("../img/icon-flower.svg");
     width: 33px;
     height: 38px;
+    top: -16px;
+  }
+
+  &_money::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-money.svg");
+    width: 47px;
+    height: 27px;
+    top: -10px;
+  }
+
+  &_heart::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-heart.svg");
+    width: 34px;
+    height: 27px;
+    top: -10px;
+  }
+
+  &_clew::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-clew.svg");
+    width: 35px;
+    height: 34px;
+    top: -10px;
+  }
+
+  &_rocket::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-rocket.svg");
+    width: 55px;
+    height: 23px;
+    top: -10px;
+  }
+
+  &_present::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-present.svg");
+    width: 33px;
+    height: 32px;
+    top: -10px;
   }
 }
