@@ -1,0 +1,20 @@
+.production-decor {
+  border: 1px solid $light-grey;
+  margin-top: 30px;
+  margin-bottom: 58px;
+}
+
+.production__title {
+  padding: 21px 0 26px 91px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/video-icon.svg");
+    width: 32px;
+    height: 22px;
+    left: 34px;
+    bottom: 39px;
+  }
+}
