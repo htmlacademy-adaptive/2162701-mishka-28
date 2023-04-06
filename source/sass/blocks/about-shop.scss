@@ -1,0 +1,25 @@
+.about-shop__title {
+  padding: 31px 0 28px 0;
+}
+
+.about-shop__list {
+  list-style: none;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.about-shop__item {
+  padding: 42px 0;
+  position: relative;
+
+  &_flower::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-flower.svg");
+    width: 33px;
+    height: 38px;
+  }
+}

@@ -11,12 +11,13 @@
 .hero__title {
   text-align: center;
   padding-top: 73px;
-  padding-bottom: 120px;
+  padding-bottom: 110px;
 }
 
 .hero__list {
   list-style: none;
   padding: 0;
+  margin: 30px 0;
 }
 
 .hero__link {
@@ -36,7 +37,7 @@
   }
 
   &_green {
-    background-color: $blue-grin;
+    background-color: $blue-green;
   }
 
   &_interior::before {
