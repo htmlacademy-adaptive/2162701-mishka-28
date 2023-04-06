@@ -1,0 +1,90 @@
+.order-form__descr {
+  font-size: 13px;
+  line-height: 24px;
+  padding: 17px 0 29px;
+  margin: 0;
+}
+
+.order-form__filter {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-form__form {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-form__filter-list {
+  margin: 35px 0  43px;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-form__filter-item_radio {
+  margin: 24px 0;
+}
+
+.order-form__filter-item_checkbox {
+  margin: 35px 0;
+}
+
+.order-form__form-list {
+  margin: 0;
+  padding: 0 0 54px;
+  list-style: none;
+}
+
+.order-form__form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form__form-label {
+  padding: 21px 0 16px;
+  color: $black;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-form__form-input,
+.order-form__input {
+  border: none;
+  color: $black;
+  opacity: 30%;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-form__input {
+  padding: 15px 0 19px;
+}
+
+.order-form__textarea {
+  width: 260px;
+  padding: 17px;
+  margin: 22px 0 17px;
+  box-sizing: border-box;
+  color: $black;
+  font-size: 17px;
+  line-height: 18px;
+  border: 2px solid $anthracite;
+  resize: none;
+}
+
+.order-form__descr-form {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 17px 0 30px;
+}
+
+.order-form__button {
+  padding: 18px 37px;
+  margin-bottom: 55px;
+}
