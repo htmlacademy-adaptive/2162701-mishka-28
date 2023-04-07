@@ -2,6 +2,9 @@
   border: 1px solid $light-grey;
   margin-top: 30px;
   margin-bottom: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .production__title {
@@ -17,4 +20,13 @@
     left: 34px;
     bottom: 39px;
   }
+}
+
+.production__descr {
+  margin: 0;
+  padding: 34px 0 41px 35px;
+}
+
+.production__button {
+  padding: 18px 11px;
 }

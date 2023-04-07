@@ -7,8 +7,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  //flex-direction: column;
+  //display: grid;
+  //justify-content: center;
+  //align-items: center;
+  //justify-items: center;
+  //grid-template-columns: repeat(2, auto);
+  //grid-auto-rows: repeat(2, auto);
 }
 
-.main-header__logo-link {
-  margin: 22px 0;
-}

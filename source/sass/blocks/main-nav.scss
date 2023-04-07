@@ -1,8 +1,11 @@
 .main-nav {
-  display: none;
+  // display: none;
+  display: grid;
 
   &__list {
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   &__link {
@@ -13,3 +16,59 @@
     line-height: 24px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+.main-nav__logo-link {
+  margin: 22px 0;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo-link {
+    grid-column: 2/3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list-user {
+    grid-column: 2/3;
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list-user {
+    grid-column: 3/4;
+    display: flex;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list-shop {
+    grid-row: 2/2;
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list-shop {
+    grid-row: 1/2;
+    display: flex;
+  }
+}
+
+.main-nav__list-shop-new {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list-shop-new {
+    display: flex;
+  }
+}
+
