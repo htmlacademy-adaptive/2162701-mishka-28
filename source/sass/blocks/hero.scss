@@ -1,7 +1,10 @@
 .hero {
+  width: 320px;
+}
+
+.hero__image {
   background-image: url("../img/background/background-hero-mobile.jpg");
   background-repeat: no-repeat;
-  width: 320px;
 }
 
 .hero__container {
