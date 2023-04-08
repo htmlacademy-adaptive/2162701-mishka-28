@@ -57,7 +57,7 @@
   &::after {
     position: absolute;
     content: "";
-    background-image: url(../img/zigzag-line.svg);
+    background-image: url("../img/zigzag-line.svg");
     width: 320px;
     height: 6px;
     left: -30px;
