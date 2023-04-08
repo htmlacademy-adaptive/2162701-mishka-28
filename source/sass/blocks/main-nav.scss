@@ -1,6 +1,7 @@
 .main-nav {
   // display: none;
   display: grid;
+  z-index: 1;
 
   &__list {
     list-style: none;
@@ -17,6 +18,32 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__link_saze-m {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__link_saze-l {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__link-search {
+    padding: 36px 32px 34px;
+    border-left: 1px solid $light-grey;
+    border-right: 1px solid $light-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__link-basket {
+    padding: 33px 0 31px 53px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-nav {
     display: grid;
@@ -25,12 +52,13 @@
 }
 
 .main-nav__logo-link {
-  margin: 22px 0;
+  padding: 22px 0;
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__logo-link {
     grid-column: 2/3;
+    padding: 9px 101px 13px 70px;
   }
 }
 
@@ -38,6 +66,8 @@
   .main-nav__list-user {
     grid-column: 2/3;
     display: flex;
+    align-items: center;
+    position: relative;
   }
 }
 
@@ -49,16 +79,62 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav__list-user::after {
+    content: "Бесплатная доставка по России";
+    position: absolute;
+    top: 94px;
+    font-size: 15px;
+    color: $anthracite;
+    line-height: 24px;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list-user::after {
+    content: "Бесплатная доставка по России";
+    position: absolute;
+    right: 0;
+    top: 80px;
+    font-size: 15px;
+    color: $anthracite;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .main-nav__list-shop {
     grid-row: 2/2;
     display: flex;
+    gap: 30px;
+    margin-right: 20px;
+    //z-index: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__list-shop {
     grid-row: 1/2;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
+    align-items: center;
+  }
+}
+
+.main-nav__item-decor {
+  position: relative;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__item-decor::after {
+    content: "";
+    position: absolute;
+    border-left: 1px solid $light-grey;
+    width: 1px;
+    height: 88px;
+    right: -30px;
+    bottom: -28px;
   }
 }
 
@@ -68,6 +144,14 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list-shop-new {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__text {
+    display: none;
   }
 }

@@ -5,6 +5,8 @@
 .hero__image {
   background-image: url("../img/background/background-hero-mobile.jpg");
   background-repeat: no-repeat;
+  border-top: 1px solid $light-grey;
+  margin-top: -24px;
 }
 
 .hero__container {
