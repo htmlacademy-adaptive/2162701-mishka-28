@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>HTML Мишка - милые штуки ручнойработы для дома</title>
+  <title>HTML Мишка - милые штуки ручной работы для дома</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../source/img/favicon/favicon.png">
   <base href="https://htmlacademy-adaptive.github.io/2162701-mishka-28/3/">
@@ -75,8 +75,8 @@
 
     <h1 class="visually-hidden">Магазин вязанных изделий для интерьера</h1>
 
-    <section class="hero hero__image">
-      <div class="container hero__container">
+    <section class="hero">
+      <div class="container hero__container hero__image">
         <h2 class="title hero__title title_size_l">Милые штуки <br> ручной <br> работы для дома</h2>
         <ul class="hero__list">
           <li class="hero__item hero__item_interior hero__item_light-green">
@@ -175,14 +175,14 @@
           <a class="reviews__link" href="#">@misssssiskras3</a>
         </div>
         <div class="reviews__button-decor">
-          <button class="reviews__button-icon reviews__button_prev" type="button">
+          <button class="reviews__button-icon reviews__button-icon_prev" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
             <svg aria-hidden="true" focusable="false" width="50" height="26" viewBox="0 0 50 26" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
             </svg>
           </button>
-          <button class="reviews__button-icon reviews__button_next" type="button">
+          <button class="reviews__button-icon reviews__button-icon_next" type="button">
             <span class="visually-hidden">Следющий отзыв</span>
             <svg aria-hidden="true" focusable="false" width="50" height="26" viewBox="0 0 50 26" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -235,7 +235,7 @@
           <path d="M24.2204 6.663C24.7204 6.56355 25.2204 6.4641 25.7204 6.16576C25.8204 6.06631 25.9204 5.96686 25.9204 5.96686C26.4204 5.66852 26.9204 5.17128 26.6204 4.57459C26.1204 3.48067 26.2204 2.38675 26.2204 1.19337C26.2204 0.198895 25.2204 0 24.4204 0C23.7204 0.0994477 22.2204 0.596686 22.2204 1.49172C22.2204 2.48619 22.1204 3.48067 22.3204 4.47515C22.3204 4.57459 22.2204 4.67404 22.2204 4.87294C22.1204 5.07183 22.2204 5.27073 22.3204 5.46962V5.56907C22.3204 5.66852 22.3204 5.76797 22.3204 5.86742C22.4204 6.06631 22.5204 6.26521 22.7204 6.36465C23.3204 6.663 23.8204 6.663 24.2204 6.663Z" fill="black"/>
           </svg>
       </a>
-      <ul class="social social__list">
+      <ul class="social main-footer__social-list">
         <li class="social__item">
           <a class="social__link social__link_vkontakte" href="https://vk.com/htmlacademy">
             <svg aria-hidden="true" focusable="false" width="27" height="18" viewBox="0 0 27 18" fill="none"
@@ -292,18 +292,21 @@
                 <input class="visually-hidden" type="radio" name="size" value="s" checked>
                 <span class="modal__control-input"></span>
                 <span class="modal__control-descr">S</span>
+              </label>
             </li>
             <li class="modal__item">
               <label class="modal__control">
                 <input class="visually-hidden" type="radio" name="size" value="m">
                 <span class="modal__control-input"></span>
                 <span class="modal__control-descr">M</span>
+              </label>
             </li>
             <li class="modal__item">
               <label class="modal__control">
                 <input class="visually-hidden" type="radio" name="size" value="r">
                 <span class="modal__control-input"></span>
                 <span class="modal__control-descr">R</span>
+              </label>
             </li>
           </ul>
           <button class="button modal__button" type="submit">

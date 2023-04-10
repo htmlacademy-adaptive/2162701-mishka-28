@@ -1,16 +1,14 @@
 @charset "UTF-8";
 @font-face {
-  src: url("../fonts/opensans.woff2") format("woff2");
-  src: url("../../fonts/opensans.woff") format("woff");
-  font-family: "Open Sans";
+  src: url("../../fonts/opensans.woff2") format("woff2"), "../../fonts/opensans.woff" format("woff");
+  font-family: "open Sans";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  src: url("../fonts/opensansbold.woff2") format("woff2");
-  src: url("../fonts/opensansbold.woff") format("woff");
-  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), "../fonts/opensansbold.woff" format("woff");
+  font-family: "open Sans";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -18,7 +16,7 @@
 @font-face {
   src: url("../fonts/opensans.woff2") format("woff2");
   src: url("../fonts/opensans.woff") format("woff");
-  font-family: "Open Sans";
+  font-family: "open Sans";
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -26,7 +24,7 @@
 @font-face {
   src: url("../fonts/opensans.woff2") format("woff2");
   src: url("../fonts/opensansbold.woff") format("woff");
-  font-family: "Open Sans";
+  font-family: "open Sans";
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -640,6 +638,17 @@ body {
     flex-direction: row;
   }
 }
+.main-footer__social-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 30px 0 32px;
+  width: 142px;
+}
+
 .main-footer__link {
   display: none;
 }
@@ -738,6 +747,28 @@ body {
     display: none;
   }
 }
+.order-form__label-title_phone::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/phone.svg");
+  width: 25px;
+  height: 24px;
+  right: 0;
+  top: 24px;
+  z-index: 1;
+}
+
+.order-form__label-title_mail::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/mail.svg");
+  width: 32px;
+  height: 21px;
+  right: 0;
+  top: 28px;
+  z-index: 1;
+}
+
 .order-form__form {
   border: none;
   padding: 0;
@@ -805,6 +836,7 @@ textarea::placeholder {
   border-bottom: 2px solid #000000;
   margin-bottom: 40px;
   width: 260px;
+  font-family: inherit;
 }
 
 .order-form__textarea {
@@ -817,6 +849,7 @@ textarea::placeholder {
   line-height: 18px;
   border: 2px solid #444444;
   resize: none;
+  font-family: inherit;
 }
 
 .order-form__descr-form {
@@ -856,10 +889,13 @@ textarea::placeholder {
 .production__descr {
   margin: 0;
   padding: 34px 0 41px 35px;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .production__button {
   padding: 18px 11px;
+  margin-bottom: 33px;
 }
 
 .reviews__title {
@@ -927,17 +963,6 @@ textarea::placeholder {
   left: -30px;
   right: 30px;
   top: 82px;
-}
-
-.social__list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 30px 0 32px;
-  width: 142px;
 }
 
 .week-product__offer {
