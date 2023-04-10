@@ -33,6 +33,18 @@
   }
 }
 
+.main-footer__social-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 30px 0 32px;
+  width: 142px;
+}
+
+
 .main-footer__link {
   display: none;
 }

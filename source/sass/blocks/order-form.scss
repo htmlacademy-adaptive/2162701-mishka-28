@@ -46,6 +46,28 @@
   }
 }
 
+.order-form__label-title_phone::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/phone.svg");
+  width: 25px;
+  height: 24px;
+  right: 0;
+  top: 24px;
+  z-index: 1;
+}
+
+.order-form__label-title_mail::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/mail.svg");
+  width: 32px;
+  height: 21px;
+  right: 0;
+  top: 28px;
+  z-index: 1;
+}
+
 .order-form__form {
   border: none;
   padding: 0;
@@ -113,6 +135,7 @@ textarea::placeholder {
   border-bottom: 2px solid $black;
   margin-bottom: 40px;
   width: 260px;
+  font-family: inherit;
 }
 
 .order-form__textarea {
@@ -125,6 +148,7 @@ textarea::placeholder {
   line-height: 18px;
   border: 2px solid $anthracite;
   resize: none;
+  font-family: inherit;
 }
 
 .order-form__descr-form {
