@@ -1,0 +1,163 @@
+.order-form__descr {
+  font-size: 13px;
+  line-height: 24px;
+  padding: 17px 0 29px;
+  margin: 0;
+}
+
+.order-form__filter {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-form__filter,
+.order-form__form,
+.order-form__label-title {
+  position: relative;
+}
+
+.order-form__filter::after,
+.order-form__form::after,
+.order-form__label-title::after {
+  position: absolute;
+  content: "";
+  border-top: 1px solid $downy-light-green;
+  width: 200px;
+  height: 1px;
+  right: 0;
+  top: 8px;
+}
+
+.order-form__filter_line::after,
+.order-form__form_line::after {
+  top: -8px;
+}
+
+.order-form__label-title_line_s::after {
+  width: 182px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form__filter::after,
+  .order-form__form::after,
+  .order-form__label-title::after {
+    display: none;
+  }
+}
+
+.order-form__label-title_phone::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/phone.svg");
+  width: 25px;
+  height: 24px;
+  right: 0;
+  top: 24px;
+  z-index: 1;
+}
+
+.order-form__label-title_mail::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/mail.svg");
+  width: 32px;
+  height: 21px;
+  right: 0;
+  top: 28px;
+  z-index: 1;
+}
+
+.order-form__form {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-form__filter-list {
+  margin: 35px 0  43px;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-form__filter-item_radio {
+  margin: 24px 0;
+}
+
+.order-form__filter-item_checkbox {
+  margin: 35px 0;
+}
+
+.order-form__form-list {
+  margin: 0;
+  padding: 0 0 42px;
+  list-style: none;
+}
+
+.order-form__form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form__form-label {
+  padding: 21px 0 16px;
+  color: $black;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-form__form-input,
+.order-form__input {
+  border: none;
+  color: $black;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.order-form__form-input {
+  padding: 17px 0;
+  border-bottom: 2px solid $black;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: $black;
+  opacity: 30%;
+}
+
+.order-form__input {
+  position: relative;
+  padding: 15px 0 19px;
+  border-bottom: 2px solid $black;
+  margin-bottom: 40px;
+  width: 260px;
+  font-family: inherit;
+}
+
+.order-form__textarea {
+  width: 260px;
+  padding: 17px;
+  margin: 22px 0 17px;
+  box-sizing: border-box;
+  color: $black;
+  font-size: 17px;
+  line-height: 18px;
+  border: 2px solid $anthracite;
+  resize: none;
+  font-family: inherit;
+}
+
+.order-form__descr-form {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 17px 0 30px;
+}
+
+.order-form__button {
+  padding: 18px 37px;
+  margin-bottom: 55px;
+}

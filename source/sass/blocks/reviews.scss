@@ -1,0 +1,67 @@
+.reviews__title {
+  padding: 16px 0 14px;
+}
+
+.reviews__slider {
+  display: none;
+}
+
+.reviews__slider-open {
+  display: block;
+}
+
+.reviews__description {
+  margin: 0;
+  font-size: 15px;
+  line-height: 30px;
+  padding-bottom: 33px;
+}
+
+.reviews__name {
+  color: $black;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: block;
+  padding-bottom: 8px;
+}
+
+.reviews__link {
+  text-decoration: none;
+  color: $anthracite;
+  display: block;
+  margin-bottom: 30px;
+  font-family: "open sans", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__button-icon {
+  border: 1px solid $light-grey;
+  background-color: $white;
+  margin: 0;
+  padding: 13px 44px 13px 35px;
+  cursor: pointer;
+}
+
+.reviews__button-decor {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.reviews__button {
+  padding: 16px 78px;
+  position: relative;
+  margin-bottom: 45px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/zigzag-line.svg");
+    width: 320px;
+    height: 6px;
+    left: -30px;
+    right: 30px;
+    top: 82px;
+  }
+}

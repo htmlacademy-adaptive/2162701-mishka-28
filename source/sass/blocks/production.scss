@@ -1,0 +1,35 @@
+.production-decor {
+  border: 1px solid $light-grey;
+  margin-top: 30px;
+  margin-bottom: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.production__title {
+  padding: 21px 0 26px 91px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/video-icon.svg");
+    width: 32px;
+    height: 22px;
+    left: 34px;
+    bottom: 39px;
+  }
+}
+
+.production__descr {
+  margin: 0;
+  padding: 34px 0 41px 35px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.production__button {
+  padding: 18px 11px;
+  margin-bottom: 33px;
+}

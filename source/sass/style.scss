@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+@import "global/fonts.scss";
+@import "global/visually-hidden.scss";
+@import "global/global.scss";
+@import "blocks/body.scss";
+@import "blocks/container.scss";
+@import "blocks/title.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-container.scss";
+@import "blocks/hero.scss";
+@import "blocks/button.scss";
+@import "blocks/header-form.scss";
+@import "blocks/control.scss";
+@import "blocks/header-catalog.scss";
+@import "blocks/about-shop.scss";
+@import "blocks/catalog.scss";
+@import "blocks/contacts.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/main-header.scss";
+@import "blocks/modal.scss";
+@import "blocks/order-form.scss";
+@import "blocks/production.scss";
+@import "blocks/reviews.scss";
+@import "blocks/social.scss";
+@import "blocks/week-product.scss";

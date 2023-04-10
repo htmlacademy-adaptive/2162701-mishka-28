@@ -1,0 +1,23 @@
+.main-header__button {
+  border: none;
+  cursor: pointer;
+}
+
+.main-header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //flex-direction: column;
+  //display: grid;
+  //justify-content: center;
+  //align-items: center;
+  //justify-items: center;
+  //grid-template-columns: repeat(2, auto);
+  //grid-auto-rows: repeat(2, auto);
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__button {
+    display: none;
+  }
+}

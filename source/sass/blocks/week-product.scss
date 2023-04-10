@@ -1,0 +1,68 @@
+.week-product__offer {
+  text-transform: uppercase;
+  color: $downy-green;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 3px;
+  padding-bottom: 17px;
+  display: block;
+}
+
+.week-product__descr {
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+  padding-bottom: 28px;
+}
+
+.week-product__list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 28px;
+}
+
+.week-product__name {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid $light-grey;
+}
+
+.week-product__text {
+  padding: 10px 0;
+  border-bottom: 1px solid $light-grey;
+  margin: 0;
+}
+
+.week-product__image {
+  margin-bottom: 25px;
+}
+
+.week-product__price {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.week-product__button {
+  padding: 16px 82px;
+  margin-bottom: 36px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/zigzag-line.svg");
+    width: 320px;
+    height: 6px;
+    left: -30px;
+    right: 30px;
+    top: 82px;
+  }
+}

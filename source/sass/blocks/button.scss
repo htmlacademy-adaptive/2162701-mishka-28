@@ -1,0 +1,13 @@
+.button {
+  font-family: "open sans", sans-serif;
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $anthracite;
+  background-color: $white;
+  border: 2px solid $anthracite;
+  display: inline-block;
+  cursor: pointer;
+}
