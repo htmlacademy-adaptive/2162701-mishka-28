@@ -2,6 +2,10 @@
   // display: none;
   display: grid;
   z-index: 1;
+  min-height: 79px;
+  background-color: $white;
+  width: auto;
+  position: relative;
 
   &__list {
     list-style: none;
@@ -18,6 +22,56 @@
   }
 }
 
+.main-nav__button {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 27px;
+  height: 27px;
+  background-color: $white;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav_closed .main-nav__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 2px;
+  background-color: $light-black;
+  box-shadow: 0 8px 0 0 $light-black, 0 16px 0 0 $light-black;
+}
+
+.main-nav_opened .main-nav__button {
+  top: 30px;
+  left: auto;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 2px;
+    background-color: $black;
+    left: 0;
+    top: 12px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .main-nav__link_saze-m {
     font-size: 15px;
@@ -31,7 +85,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__link-search {
+  .main-nav__item-search {
     padding: 36px 32px 34px;
     border-left: 1px solid $light-grey;
     border-right: 1px solid $light-grey;
@@ -39,7 +93,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__link-basket {
+  .main-nav__item-basket {
     padding: 33px 0 31px 53px;
   }
 }
@@ -47,7 +101,8 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start;
   }
 }
 
@@ -66,6 +121,7 @@
   .main-nav__list-user {
     grid-column: 2/3;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     position: relative;
   }
@@ -106,6 +162,7 @@
   .main-nav__list-shop {
     grid-row: 2/2;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin-right: 20px;
     //z-index: 1;
@@ -116,27 +173,29 @@
   .main-nav__list-shop {
     grid-row: 1/2;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     align-items: center;
   }
 }
 
-.main-nav__item-decor {
-  position: relative;
-}
-
 @media (min-width: $desktop-width) {
-  .main-nav__item-decor::after {
-    content: "";
-    position: absolute;
-    border-left: 1px solid $light-grey;
-    width: 1px;
-    height: 88px;
-    right: -30px;
-    bottom: -28px;
+  .main-nav__item-decor {
+    position: relative;
+    border-right: 1px solid $light-grey;
+    padding: 26px 0;
   }
 }
+
+//@media (min-width: $desktop-width) {
+  //.main-nav__item-decor::after {
+  //content: "";
+  //position: absolute;
+  //border-left: 1px solid $light-grey;
+  //width: 1px;
+  //height: 88px;
+  //right: 0;
+  //bottom: -18px;
 
 .main-nav__list-shop-new {
   display: none;

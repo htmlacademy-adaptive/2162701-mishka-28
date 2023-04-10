@@ -11,3 +11,12 @@
   display: inline-block;
   cursor: pointer;
 }
+
+.button_green {
+  padding: 18px 67px;
+  font-size: 17px;
+  line-height: 16px;
+  border: none;
+  background-color: $downy-green;
+  color: $white;
+}
