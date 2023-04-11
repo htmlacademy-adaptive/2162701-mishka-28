@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 100%;
+  padding: 0;
   //flex-direction: column;
   //display: grid;
   //justify-content: center;
@@ -11,8 +13,3 @@
   //grid-auto-rows: repeat(2, auto);
 }
 
-@media (min-width: $tablet-width) {
-  .main-header__button {
-    display: none;
-  }
-}

@@ -1,31 +1,50 @@
 .main-nav {
-  // display: none;
   display: grid;
   z-index: 1;
   min-height: 79px;
   background-color: $white;
-  width: auto;
+  width: 100%;
   position: relative;
+}
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $black;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.main-nav__logo-link {
+  padding: 22px 0 18px;
+  display: inline;
+  text-align: center;
+  box-shadow: 0 1px 0 $light-grey, inset 0 1px 0 $light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__logo-link {
+    box-shadow: none;
   }
+}
 
-  &__link {
-    text-decoration: none;
-    color: $black;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
+@media (min-width: $desktop-width) {
+  .main-nav__logo-link {
+    grid-column: 2/3;
+    padding: 9px 101px 13px 70px;
   }
 }
 
 .main-nav__button {
   position: absolute;
   top: 30px;
-  right: 0;
+  right: 28px;
   z-index: 2;
   display: block;
   width: 27px;
@@ -47,7 +66,7 @@
 }
 
 .main-nav_opened .main-nav__button {
-  top: 30px;
+  top: 26px;
   left: auto;
 
   &::before,
@@ -71,6 +90,52 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-nav_closed .main-nav__item {
+    display: none;
+  }
+}
+
+.main-nav_opened .main-nav__list-shop .main-nav__list-user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.main-nav_nojs .main-nav__button {
+  display: none;
+}
+
+.main-nav_nojs .main-nav__list-shop .main-nav__list-user {
+  position: static;
+  min-height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__button {
+    display: none;
+  }
+}
+
+.main-nav__item-box {
+  box-shadow: 0 1px 0 $light-grey, inset 0 1px 0 $light-grey;
+  padding: 28px 0 27px 24%;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__item-box {
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+.main-nav__icon {
+  position: absolute;
+  left: 10%;
+  top: 31px;
+}
 
 @media (min-width: $tablet-width) {
   .main-nav__link_saze-m {
@@ -106,16 +171,6 @@
   }
 }
 
-.main-nav__logo-link {
-  padding: 22px 0;
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav__logo-link {
-    grid-column: 2/3;
-    padding: 9px 101px 13px 70px;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .main-nav__list-user {
