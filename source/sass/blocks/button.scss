@@ -20,3 +20,9 @@
   background-color: $downy-green;
   color: $white;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 17px;
+  }
+}

@@ -5,14 +5,17 @@
 .hero__image {
   background-image: url("../img/background/background-hero-mobile.jpg");
   background-repeat: no-repeat;
-  height: 100vh;
-  //border-top: 1px solid $light-grey;
+  height: 81vh;
+  object-fit: cover;
 }
 
 .hero__container {
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-  align-content: space-between;
+  width: 100%;
+}
+
+.hero__title {
+  text-align: center;
+  padding: 73px 7px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,16 +25,10 @@
 
   .hero__image {
     background-image: url("../img/background/background-hero-tablet.jpg");
-    height: 100vh;
-    //margin-top: -24px;
+    height: 746px;
   }
 
-  .hero__container {
-    display: grid;
+  .hero__title {
+    padding-top: 155px;
   }
-}
-
-.hero__title {
-  text-align: center;
-  padding: 73px 7px 0;
 }

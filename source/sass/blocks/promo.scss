@@ -1,8 +1,12 @@
+.promo__container {
+  position: relative;
+}
+
 .promo__list {
   list-style: none;
   padding: 0;
   padding-bottom: 34px;
-  margin: 0;
+  margin-top: -119px;
 }
 
 .promo__link {
@@ -44,11 +48,38 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
+  .promo__container::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/zigzag-white-tablet.svg");
+    width: 770px;
+    height: 25px;
+    bottom: -15px;
+    z-index: 1;
+  }
+
   .promo__list {
-    padding: 0;
+    padding: 0 50px;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 50% 50%;
+  }
+
+  .promo__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .promo__item {
+    padding: 24px 0 31px 36px;
+  }
+
+  .promo__item_interior::before {
+    bottom: 24px;
+  }
+
+  .promo__item_toys::before {
+    right: 33px;
+    bottom: 25px;
   }
 }
