@@ -1,16 +1,17 @@
 .contacts__maps {
   margin-left: -30px;
-  margin-bottom: 42px;
+  margin-bottom: 30px;
 }
 
 .contacts__title {
-  margin: 38px 0 28px;
+  margin: 43px 0 21px;
 }
 
 .contacts__list {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(2, auto);
+  gap: 16px 2px;
   font-size: 14px;
   line-height: 30px;
   margin-bottom: 62px;
@@ -23,6 +24,7 @@
 .contacts__e-mail,
 .contacts__address {
   padding: 7px 0;
+  margin-left: 30px;
 }
 
 .contacts__e-mail-link {
@@ -37,6 +39,12 @@
 }
 
 .contacts__button {
-  padding: 16px 50px;
+  padding: 14px 49px;
   margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__list {
+    font-size: 17px;
+  }
 }

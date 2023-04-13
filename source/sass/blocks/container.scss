@@ -3,16 +3,26 @@
   margin: 0 auto;
 }
 
+.container__wrapper {
+  padding: 0 30px;
+  width: 260px;
+}
+
 @media (min-width: $tablet-width) {
   .container {
-    width: 668px;
+    width: 768px;
     margin: 0 auto;
+  }
+
+  .container__wrapper {
+    padding: 0 50px;
+    width: 668px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1050px;
+    width: 1150px;
     margin: 0 auto;
   }
 }

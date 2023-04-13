@@ -5,3 +5,9 @@
   margin: 0 auto;
   flex-grow: 1;
 }
+
+@media (min-width: $tablet-width) {
+  .main-container {
+    width: 768px;
+  }
+}

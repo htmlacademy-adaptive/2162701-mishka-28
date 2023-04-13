@@ -4,6 +4,8 @@
   align-items: center;
   min-width: 100%;
   padding: 0;
+  position: relative;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
   //flex-direction: column;
   //display: grid;
   //justify-content: center;
@@ -13,3 +15,40 @@
   //grid-auto-rows: repeat(2, auto);
 }
 
+.main-header__logo-link {
+  position: absolute;
+  content: "";
+  width: 86px;
+  height: 35px;
+  z-index: 2;
+  top: 0;
+  padding: 22px 0 22px;
+  //display: inline;
+  //text-align: center;
+}
+
+.main-header__text {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-header__container {
+    box-shadow: inset 0 1px 0 #ececec;
+  }
+
+  .main-header__logo-link {
+    left: 30px;
+  }
+
+  .main-header__text {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__logo-link {
+    padding: 9px 0 7px 0;
+    left: auto;
+  }
+}

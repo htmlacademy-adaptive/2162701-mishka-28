@@ -21,26 +21,6 @@
   line-height: 24px;
 }
 
-.main-nav__logo-link {
-  padding: 22px 0 18px;
-  display: inline;
-  text-align: center;
-  box-shadow: 0 1px 0 $light-grey, inset 0 1px 0 $light-grey;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__logo-link {
-    box-shadow: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav__logo-link {
-    grid-column: 2/3;
-    padding: 9px 101px 13px 70px;
-  }
-}
-
 .main-nav__button {
   position: absolute;
   top: 30px;
@@ -63,6 +43,10 @@
   height: 2px;
   background-color: $light-black;
   box-shadow: 0 8px 0 0 $light-black, 0 16px 0 0 $light-black;
+}
+
+.main-nav_opened {
+  padding-top: 79px;
 }
 
 .main-nav_opened .main-nav__button {
@@ -186,30 +170,6 @@
   .main-nav__list-user {
     grid-column: 3/4;
     display: flex;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__list-user::after {
-    content: "Бесплатная доставка по России";
-    position: absolute;
-    top: 94px;
-    font-size: 15px;
-    color: $anthracite;
-    line-height: 24px;
-    right: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-nav__list-user::after {
-    content: "Бесплатная доставка по России";
-    position: absolute;
-    right: 0;
-    top: 80px;
-    font-size: 15px;
-    color: $anthracite;
-    line-height: 24px;
   }
 }
 

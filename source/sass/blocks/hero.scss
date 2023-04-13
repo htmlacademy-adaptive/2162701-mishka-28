@@ -5,24 +5,48 @@
 .hero__image {
   background-image: url("../img/background/background-hero-mobile.jpg");
   background-repeat: no-repeat;
-  border-top: 1px solid $light-grey;
-  margin-top: -24px;
+  height: 100vh;
+  //border-top: 1px solid $light-grey;
 }
 
 .hero__container {
-  width: 320px;
-}
-
-.hero__title {
-  text-align: center;
-  padding-top: 73px;
-  padding-bottom: 110px;
+  display: grid;
+  grid-template-rows: repeat(2,auto);
+  align-content: space-between;
 }
 
 .hero__list {
   list-style: none;
   padding: 0;
-  margin: 30px 0;
+  padding-bottom: 34px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    width: 768px;
+  }
+
+  .hero__image {
+    background-image: url("../img/background/background-hero-tablet.jpg");
+    height: 100vh;
+    //margin-top: -24px;
+  }
+
+  .hero__container {
+    display: grid;
+  }
+
+  .hero__list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+.hero__title {
+  text-align: center;
+  padding: 73px 7px 0;
 }
 
 .hero__link {
