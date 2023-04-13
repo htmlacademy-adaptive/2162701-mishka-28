@@ -11,15 +11,8 @@
 
 .hero__container {
   display: grid;
-  grid-template-rows: repeat(2,auto);
+  grid-template-rows: repeat(2, auto);
   align-content: space-between;
-}
-
-.hero__list {
-  list-style: none;
-  padding: 0;
-  padding-bottom: 34px;
-  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,54 +29,9 @@
   .hero__container {
     display: grid;
   }
-
-  .hero__list {
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-  }
 }
 
 .hero__title {
   text-align: center;
   padding: 73px 7px 0;
-}
-
-.hero__link {
-  text-decoration: none;
-  color: $white;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 24px;
-}
-
-.hero__item {
-  padding: 24px 0 31px 30px;
-  position: relative;
-
-  &_light-green {
-    background-color: $downy-green;
-  }
-
-  &_green {
-    background-color: $blue-green;
-  }
-
-  &_interior::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/interior.svg");
-    width: 40px;
-    height: 62px;
-    right: 36px;
-  }
-
-  &_toys::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/toy.svg");
-    width: 60px;
-    height: 60px;
-    right: 27px;
-  }
 }

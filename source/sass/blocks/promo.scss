@@ -1,0 +1,54 @@
+.promo__list {
+  list-style: none;
+  padding: 0;
+  padding-bottom: 34px;
+  margin: 0;
+}
+
+.promo__link {
+  text-decoration: none;
+  color: $white;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.promo__item {
+  padding: 24px 0 31px 30px;
+  position: relative;
+
+  &_light-green {
+    background-color: $downy-green;
+  }
+
+  &_green {
+    background-color: $blue-green;
+  }
+
+  &_interior::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/interior.svg");
+    width: 40px;
+    height: 62px;
+    right: 36px;
+  }
+
+  &_toys::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/toy.svg");
+    width: 60px;
+    height: 60px;
+    right: 27px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .promo__list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
