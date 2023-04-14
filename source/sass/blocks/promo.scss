@@ -5,8 +5,8 @@
 .promo__list {
   list-style: none;
   padding: 0;
-  padding-bottom: 34px;
-  margin-top: -119px;
+  padding-bottom: 14px;
+  margin-top: -121px;
 }
 
 .promo__link {
@@ -63,6 +63,7 @@
     padding: 0 50px;
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-top: -119px;
   }
 
   .promo__link {
@@ -81,5 +82,14 @@
   .promo__item_toys::before {
     right: 33px;
     bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__container::before {
+    background-image: url("../../img/zigzag-white-desktop.svg");
+    width: 1150px;
+    height: 34px;
+    bottom: -20px;
   }
 }

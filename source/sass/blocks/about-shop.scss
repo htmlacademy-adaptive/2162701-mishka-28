@@ -1,3 +1,17 @@
+.about-shop__wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/zigzag-line.svg");
+    width: 320px;
+    height: 6px;
+    left: 0;
+    top: 0;
+  }
+}
+
 .about-shop__title {
   padding: 38px 0 82px 0;
 }
@@ -90,7 +104,7 @@
   }
 
   .about-shop__title {
-    padding: 50px 0 41px;
+    padding: 26px 0 41px;
   }
 
   .about-shop__item {
@@ -154,5 +168,35 @@
   .about-shop__item_present::before {
     top: 5px;
     left: 2px;
+  }
+
+  .about-shop__wrapper::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/zigzag-line-tablet.svg");
+    width: 772px;
+    height: 17px;
+    left: 0;
+    top: -46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-shop__wrapper::before {
+    background-image: url("../img/zigzag-line-desktop.svg");
+    width: 1050px;
+    height: 23px;
+    top: 0;
+    left: 50px;
+  }
+
+  .about-shop__title {
+    margin-left: 16.5%;
+    padding-top: 88px;
+  }
+
+  .about-shop__list {
+    width: 67%;
+    margin: 0 auto;
   }
 }

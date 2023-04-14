@@ -7,6 +7,8 @@
   background-repeat: no-repeat;
   height: 81vh;
   object-fit: cover;
+  background-color: $silver;
+  margin-top: -18px;
 }
 
 .hero__container {
@@ -15,7 +17,7 @@
 
 .hero__title {
   text-align: center;
-  padding: 73px 7px 0;
+  padding: 90px 7px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,6 +28,7 @@
   .hero__image {
     background-image: url("../img/background/background-hero-tablet.jpg");
     height: 746px;
+    margin: 0;
   }
 
   .hero__title {
@@ -40,5 +43,10 @@
 
   .hero__image {
     background-image: url("../img/background/background-hero-desktop.jpg");
+  }
+
+  .hero__title {
+    padding-right: 12%;
+    padding-left: 12%;
   }
 }
