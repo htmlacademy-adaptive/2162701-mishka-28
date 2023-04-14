@@ -209,6 +209,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: start;
+    width: 1050px;
+  }
+
+  .main-nav::before {
+    position: absolute;
+    content: "";
+    width: 149px;
+    height: 72px;
+    padding: 8px 0 7px;
+    grid-column: 2/3;
   }
 
   .main-nav__list-user {
@@ -222,6 +232,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     align-items: center;
+    margin-top: 0;
   }
 
   .main-nav__item-decor {

@@ -11,3 +11,9 @@
     width: 768px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-container {
+    width: 1150px;
+  }
+}

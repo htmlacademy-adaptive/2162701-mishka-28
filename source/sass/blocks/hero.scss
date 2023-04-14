@@ -32,3 +32,13 @@
     padding-top: 155px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero {
+    width: 1150px;
+  }
+
+  .hero__image {
+    background-image: url("../img/background/background-hero-desktop.jpg");
+  }
+}
