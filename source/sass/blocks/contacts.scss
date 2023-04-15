@@ -108,7 +108,7 @@
   .contacts__container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 30% 58% 12%;
+    //grid-template-rows: 30% 58% 12%;
     margin-bottom: 103px;
   }
 
@@ -120,7 +120,7 @@
 
   .contacts__title::after {
     left: -31.5%;
-    bottom: -24px;
+    bottom: -4px;
   }
 
   .contacts__list {
@@ -130,7 +130,8 @@
     margin-left: 33%;
     padding: 0;
     margin-bottom: 74px;
-    margin-top: 26px;
+    gap: 18px;
+    justify-content: flex-start;
   }
 
   .contacts__maps {

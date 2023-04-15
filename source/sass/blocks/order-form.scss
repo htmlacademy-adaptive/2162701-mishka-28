@@ -1,7 +1,7 @@
 .order-form__descr {
   font-size: 13px;
   line-height: 24px;
-  padding: 17px 0 29px;
+  padding: 18px 0 29px;
   margin: 0;
 }
 
@@ -52,8 +52,8 @@
   background-image: url("../img/phone.svg");
   width: 25px;
   height: 24px;
-  right: 0;
-  top: 24px;
+  right: 7px;
+  top: 32px;
   z-index: 1;
 }
 
@@ -63,8 +63,8 @@
   background-image: url("../img/mail.svg");
   width: 32px;
   height: 21px;
-  right: 0;
-  top: 28px;
+  right: 3px;
+  top: 36px;
   z-index: 1;
 }
 
@@ -84,16 +84,24 @@
 }
 
 .order-form__filter-item_radio {
-  margin: 24px 0;
+  margin-top: 24px;
 }
 
 .order-form__filter-item_checkbox {
-  margin: 35px 0;
+  margin-top: 42px;
+}
+
+.order-form__filter-item_checkbox:first-child {
+  margin-top: 38px;
+}
+
+.order-form__filter-item_checkbox:last-child {
+  margin-top: 45px;
 }
 
 .order-form__form-list {
   margin: 0;
-  padding: 0 0 42px;
+  padding: 0 0 32px;
   list-style: none;
 }
 
@@ -102,8 +110,12 @@
   flex-direction: column;
 }
 
+.order-form__form-item:first-child {
+  margin-top: 7px;
+}
+
 .order-form__form-label {
-  padding: 21px 0 16px;
+  padding: 20px 0 0;
   color: $black;
   font-weight: 700;
   font-size: 17px;
@@ -116,6 +128,7 @@
   color: $black;
   font-size: 17px;
   line-height: 18px;
+  font-family: "open sans", sans-serif;
 }
 
 .order-form__form-input {
@@ -131,17 +144,17 @@ textarea::placeholder {
 
 .order-form__input {
   position: relative;
-  padding: 15px 0 19px;
+  padding: 20px 0 17px;
   border-bottom: 2px solid $black;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   width: 260px;
   font-family: inherit;
 }
 
 .order-form__textarea {
   width: 260px;
-  padding: 17px;
-  margin: 22px 0 17px;
+  padding: 16px;
+  margin: 21px 0 10px;
   box-sizing: border-box;
   color: $black;
   font-size: 17px;
@@ -154,10 +167,10 @@ textarea::placeholder {
 .order-form__descr-form {
   font-size: 14px;
   line-height: 16px;
-  margin: 17px 0 30px;
+  margin: 0 0 30px;
 }
 
 .order-form__button {
-  padding: 18px 37px;
+  padding: 14px 40px;
   margin-bottom: 55px;
 }

@@ -1,16 +1,16 @@
 .control {
   position: relative;
   display: block;
-  padding-bottom: 23px;
 }
 
 .control__mark-radio {
   position: absolute;
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   border: 2px solid $anthracite;
   border-radius: 50%;
-  top: -12px;
+  top: -8px;
+  left: -1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,8 +23,8 @@
 .control input[type="radio"]:checked + .control__mark-radio::after {
   position: absolute;
   content: "";
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background-color: $downy-light-green;
   left: 12px;
@@ -43,8 +43,8 @@
 
 .control__mark-checkbox {
   position: absolute;
-  width: 38px;
-  height: 38px;
+  width: 35px;
+  height: 35px;
   border: 2px solid $anthracite;
   top: -12px;
 }
@@ -72,8 +72,8 @@
   width: 23px;
   height: 16px;
   background-image: url("../img/tick.svg");
-  top: 11px;
-  left: 7px;
+  top: 8px;
+  left: 5px;
 }
 
 @media (min-width: $tablet-width) {
