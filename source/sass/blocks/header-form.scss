@@ -23,3 +23,14 @@
     bottom: -12px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header-form__title {
+    padding-bottom: 95px;
+  }
+
+  .header-form__title::after {
+    background-image: url("../img/zigzag-white-desktop.svg");
+    width: 1150px;
+  }
+}

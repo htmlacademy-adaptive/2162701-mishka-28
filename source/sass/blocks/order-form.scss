@@ -197,7 +197,7 @@ textarea::placeholder {
   }
 
   .order-form__radio,
-  .order-form__filter-checkbox,
+  .order-form__checkbox,
   .order-form__name,
   .order-form__feedback,
   .order-form__decor {
@@ -345,5 +345,82 @@ textarea::placeholder {
   .order-form__button {
     padding: 14px 30px;
     margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-form__descr {
+    padding-top: 117px;
+    padding-left: 225px;
+    padding-right: 200px;
+  }
+
+  .order-form__filter {
+    padding: 0 60px;
+  }
+
+  .order-form__filter-list_radio {
+    margin-left: 116px;
+  }
+
+  .order-form__filter-list_checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 12.5%;
+    gap: 18px 28px;
+  }
+
+  .control__descr-checkbox {
+    width: 155px;
+  }
+
+  .order-form__name {
+    padding: 0 110px;
+  }
+
+  .order-form__form-list {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: -48px;
+  }
+
+  .order-form__tel-mail {
+    padding: 0 110px;
+  }
+
+  .order-form__label-title_phone {
+    padding-right: 85px;
+  }
+
+  .order-form__label-title_mail {
+    padding-right: 50px;
+  }
+
+  .order-form__input {
+    width: 71%;
+  }
+
+  .order-form__label-title_mail::before {
+    left: 780px;
+  }
+
+  .order-form__label-title_phone::before {
+    left: 780px;
+  }
+
+  .order-form__feedback {
+    padding-left: 110px;
+    margin-bottom: 50px;
+    justify-content: flex-start;
+    gap: 75px;
+  }
+
+  .order-form__textarea {
+    width: 71%;
+  }
+
+  .order-form__decor {
+    padding: 0 224px;
   }
 }
