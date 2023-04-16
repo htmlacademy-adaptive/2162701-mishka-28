@@ -192,6 +192,8 @@
     flex-wrap: wrap;
     gap: 37px;
     margin-top: 22px;
+    position: absolute;
+    margin-left: 50px;
   }
 
   .main-nav__text {
@@ -207,7 +209,7 @@
 
   .main-nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 43% 14% 43%;
     justify-items: start;
     width: 1050px;
   }
@@ -224,13 +226,15 @@
   .main-nav__list-user {
     grid-column: 3/4;
     display: flex;
+    width: 100%;
+    justify-content: flex-end;
   }
 
   .main-nav__list-shop {
     grid-row: 1/2;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    grid-template-columns: 50% 50%;
+    gap: 39px;
     align-items: center;
     margin-top: 0;
   }
@@ -238,12 +242,33 @@
   .main-nav__item-decor {
     position: relative;
     border-right: 1px solid $light-grey;
-    padding: 26px 0;
+    padding: 32px 18px 32px 0;
+  }
+
+  .main-nav__item-search {
+    margin-right: 7%;
+  }
+
+  .main-nav__item-basket {
+    padding: 32px 0.5% 31px 11.5%;
+  }
+
+  .main-nav::after {
+    position: absolute;
+    content: "";
+    width: 315px;
+    height: 24px;
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 
   .main-nav__list-shop-new {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 50px;
+    gap: 62px;
+    margin-top: 20px;
+    position: absolute;
+    top: 88px;
+    left: 50px;
   }
 }

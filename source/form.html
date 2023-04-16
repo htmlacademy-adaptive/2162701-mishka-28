@@ -86,80 +86,84 @@
 
     <section class="order-form">
 
-      <div class="container container__wrapper">
+      <div class="container">
         <h2 class="visually-hidden">Форма заказа вязанных изделий</h2>
         <p class="order-form__descr">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
           уточнить детали.
         </p>
         <form class="order-form__forma" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="order-form__filter order-form__filter_line">
-            <legend class="title-form order-form__title">Тип</legend>
-            <ul class="order-form__filter-list order-form__filter-list_radio">
-              <li class="order-form__filter-item order-form__filter-item_radio">
-                <label class="control">
-                  <input class="visually-hidden" type="radio" name="type" value="interior accessory" checked>
-                  <span class="control__mark-radio"></span>
-                  <span class="control__descr">Аксессуар для интерьера</span>
-                </label>
-              </li>
-              <li class="order-form__filter-item order-form__filter-item_radio">
-                <label class="control">
-                  <input class="visually-hidden" type="radio" name="type" value="children's toy">
-                  <span class="control__mark-radio"></span>
-                  <span class="control__descr">Детская игрушка</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="order-form__filter order-form__filter_line">
-            <legend class="title-form order-form__title">Цвет</legend>
-            <ul class="order-form__filter-list order-form__filter-list_checkbox">
-              <li class="order-form__filter-item order-form__filter-item_checkbox">
-                <label class="control">
-                  <input class="visually-hidden" type="checkbox" name="color" value="white" checked>
-                  <span class="control__mark-checkbox"></span>
-                  <span class="control__descr">Белый</span>
-                </label>
-              </li>
-              <li class="order-form__filter-item order-form__filter-item_checkbox">
-                <label class="control">
-                  <input class="visually-hidden" type="checkbox" name="color" value="grey" checked>
-                  <span class="control__mark-checkbox"></span>
-                  <span class="control__descr">Серый</span>
-                </label>
-              </li>
-              <li class="order-form__filter-item order-form__filter-item_checkbox">
-                <label class="control">
-                  <input class="visually-hidden" type="checkbox" name="color" value="tiffany">
-                  <span class="control__mark-checkbox"></span>
-                  <span class="control__descr">Тиффани</span>
-                </label>
-              </li>
-              <li class="order-form__filter-item order-form__filter-item_checkbox">
-                <label class="control">
-                  <input class="visually-hidden" type="checkbox" name="color" value="black">
-                  <span class="control__mark-checkbox"></span>
-                  <span class="control__descr">Черный</span>
-                </label>
-              </li>
-              <li class="order-form__filter-item order-form__filter-item_checkbox">
-                <label class="control">
-                  <input class="visually-hidden" type="checkbox" name="color" value="pink">
-                  <span class="control__mark-checkbox"></span>
-                  <span class="control__descr">Розовый</span>
-                </label>
-              </li>
-              <li class="order-form__filter-item order-form__filter-item_checkbox">
-                <label class="control">
-                  <input class="visually-hidden" type="checkbox" name="color" value="orange">
-                  <span class="control__mark-checkbox"></span>
-                  <span class="control__descr">Оранжевый</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="order-form__form order-form__form_line">
+          <div class=" order-form__radio">
+            <fieldset class="order-form__filter order-form__filter_line">
+              <legend class="title-form order-form__title">Тип</legend>
+              <ul class="order-form__filter-list order-form__filter-list_radio">
+                <li class="order-form__filter-item order-form__filter-item_radio">
+                  <label class="control">
+                    <input class="visually-hidden" type="radio" name="type" value="interior accessory" checked>
+                    <span class="control__mark-radio"></span>
+                    <span class="control__descr">Аксессуар для интерьера</span>
+                  </label>
+                </li>
+                <li class="order-form__filter-item order-form__filter-item_radio">
+                  <label class="control">
+                    <input class="visually-hidden" type="radio" name="type" value="children's toy">
+                    <span class="control__mark-radio"></span>
+                    <span class="control__descr">Детская игрушка</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="order-form__checkbox">
+            <fieldset class="order-form__filter order-form__filter-checkbox order-form__filter_line">
+              <legend class="title-form order-form__title order-form__title-checkbox">Цвет</legend>
+              <ul class="order-form__filter-list order-form__filter-list_checkbox">
+                <li class="order-form__filter-item order-form__filter-item_checkbox">
+                  <label class="control">
+                    <input class="visually-hidden" type="checkbox" name="color" value="white" checked>
+                    <span class="control__mark-checkbox"></span>
+                    <span class="control__descr">Белый</span>
+                  </label>
+                </li>
+                <li class="order-form__filter-item order-form__filter-item_checkbox">
+                  <label class="control">
+                    <input class="visually-hidden" type="checkbox" name="color" value="grey" checked>
+                    <span class="control__mark-checkbox"></span>
+                    <span class="control__descr">Серый</span>
+                  </label>
+                </li>
+                <li class="order-form__filter-item order-form__filter-item_checkbox">
+                  <label class="control">
+                    <input class="visually-hidden" type="checkbox" name="color" value="tiffany">
+                    <span class="control__mark-checkbox"></span>
+                    <span class="control__descr">Тиффани</span>
+                  </label>
+                </li>
+                <li class="order-form__filter-item order-form__filter-item_checkbox">
+                  <label class="control">
+                    <input class="visually-hidden" type="checkbox" name="color" value="black">
+                    <span class="control__mark-checkbox"></span>
+                    <span class="control__descr">Черный</span>
+                  </label>
+                </li>
+                <li class="order-form__filter-item order-form__filter-item_checkbox">
+                  <label class="control">
+                    <input class="visually-hidden" type="checkbox" name="color" value="pink">
+                    <span class="control__mark-checkbox"></span>
+                    <span class="control__descr">Розовый</span>
+                  </label>
+                </li>
+                <li class="order-form__filter-item order-form__filter-item_checkbox">
+                  <label class="control">
+                    <input class="visually-hidden" type="checkbox" name="color" value="orange">
+                    <span class="control__mark-checkbox"></span>
+                    <span class="control__descr">Оранжевый</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="order-form__form order-form__name order-form__form_line">
             <legend class="title-form order-form__title">ФИО</legend>
             <ul class="order-form__form-list">
               <li class="order-form__form-item">
@@ -179,21 +183,32 @@
               </li>
             </ul>
           </fieldset>
-          <label class="title-form order-form__label-title order-form__label-title_phone" for="phone">
-            Тел
-          </label>
-          <input class="order-form__input" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          <label class="title-form order-form__label-title order-form__label-title_line_s  order-form__label-title_mail"
-            for="email">
-            E-mail
-          </label>
-          <input class="order-form__input order-form__input_mail" id="email" type="email" placeholder="Ваш Email*"
-            name="email" required>
-          <label class="title-form order-form__label-title" for="message">
-            Доп
-          </label>
-          <textarea class="order-form__textarea" id="message" maxlength="1000" rows="6" name="comment"
-            placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <div class="order-form_wrapper">
+            <div class="order-form__tel-mail">
+              <label class="title-form order-form__label-title order-form__label-title_phone" for="phone">
+                Тел
+              </label>
+              <input class="order-form__input order-form__input_grey" type="tel" id="phone" name="phone"
+                placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            </div>
+            <div class="order-form__tel-mail">
+              <label
+                class="title-form order-form__label-title order-form__label-title_line_s  order-form__label-title_mail"
+                for="email">
+                E&nbsp;-&nbsp;mail
+              </label>
+              <input class="order-form__input order-form__input_grey order-form__input_mail" id="email" type="email"
+                placeholder="Ваш Email*" name="email" required>
+            </div>
+
+          </div>
+          <div class="order-form__feedback">
+            <label class="title-form order-form__label-title order-form__textarea-title " for="message">
+              Доп
+            </label>
+            <textarea class="order-form__textarea" id="message" maxlength="1000" rows="6" name="comment"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
           <div class="order-form__decor">
             <p class="order-form__descr-form">*Поля обязательны для заполнения</p>
             <button class="button order-form__button" type="submit">Отправить заказ</button>
@@ -206,7 +221,7 @@
   </main>
 
   <footer class="main-footer">
-    <div class="container main-footer__container">
+    <div class="container main-footer__container container__wrapper">
       <a class="main-footer__link">
         <svg aria-hidden="true" focusable="false" width="102" height="34" viewBox="0 0 102 34" fill="none"
           xmlns="http://www.w3.org/2000/svg">

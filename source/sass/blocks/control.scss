@@ -9,15 +9,8 @@
   height: 38px;
   border: 2px solid $anthracite;
   border-radius: 50%;
-  top: -8px;
+  top: -9px;
   left: -1px;
-}
-
-@media (min-width: $tablet-width) {
-  .control__mark-radio {
-    width: 52px;
-    height: 52px;
-  }
 }
 
 .control input[type="radio"]:checked + .control__mark-radio::after {
@@ -31,29 +24,12 @@
   top: 12px;
 }
 
-@media (min-width: $tablet-width) {
-  .control input[type="radio"]:checked + .control__mark-radio::after {
-    content: "";
-    width: 22px;
-    height: 22px;
-    left: 15px;
-    top: 15px;
-  }
-}
-
 .control__mark-checkbox {
   position: absolute;
   width: 35px;
   height: 35px;
   border: 2px solid $anthracite;
   top: -12px;
-}
-
-@media (min-width: $tablet-width) {
-  .control__mark-checkbox {
-    width: 52px;
-    height: 52px;
-  }
 }
 
 .control:hover .control__mark-radio,
@@ -76,16 +52,6 @@
   left: 5px;
 }
 
-@media (min-width: $tablet-width) {
-  .control input[type="checkbox"]:checked + .control__mark-checkbox::after {
-    width: 32px;
-    height: 22px;
-    background-image: url("../img/tick-big.svg");
-    top: 16px;
-    left: 11px;
-  }
-}
-
 .control__descr {
   display: block;
   margin-left: 61px;
@@ -93,6 +59,34 @@
 
 @media (min-width: $tablet-width) {
   .control__descr {
-    margin-left: 82px;
+    margin-left: 79px;
+  }
+
+  .control__mark-radio {
+    width: 47px;
+    height: 47px;
+    top: -16px;
+  }
+
+  .control input[type="radio"]:checked + .control__mark-radio::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 14px;
+    top: 14px;
+  }
+
+  .control__mark-checkbox {
+    width: 48px;
+    height: 48px;
+    top: -15px;
+  }
+
+  .control input[type="checkbox"]:checked + .control__mark-checkbox::after {
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/tick-big.svg");
+    top: 16px;
+    left: 9px;
   }
 }
