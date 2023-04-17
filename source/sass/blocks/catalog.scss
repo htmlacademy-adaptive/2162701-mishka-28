@@ -8,7 +8,7 @@
   margin-top: 30px;
   display: block;
   border: 1px solid $light-grey;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .catalog__title {
@@ -102,5 +102,18 @@
   .catalog__title_indent-s {
     padding-bottom: 7px;
     padding-top: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: grid;
+    margin-top: 128px;
+    grid-template-columns: repeat(3, auto);
+    gap: 40px;
+  }
+
+  .catalog__item {
+    flex-direction: column;
   }
 }
