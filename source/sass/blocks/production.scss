@@ -24,12 +24,53 @@
 
 .production__descr {
   margin: 0;
-  padding: 34px 0 41px 35px;
+  padding: 35px 0 41px 33px;
   font-size: 13px;
   line-height: 24px;
 }
 
 .production__button {
-  padding: 18px 11px;
+  padding: 14px 20px;
   margin-bottom: 33px;
 }
+
+@media (min-width: $tablet-width) {
+  .production__decor {
+    margin-top: 0;
+    align-items: flex-start;
+    margin-bottom: 64px;
+  }
+
+  .production__title {
+    order: 2;
+    padding: 37px 0 0 106px;
+  }
+
+  .production__title::before {
+    left: 42px;
+    bottom: 4px;
+  }
+
+  .production__image {
+    order: 1;
+  }
+
+  .production__decor-wrapper {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 40px;
+  }
+
+  .production__descr {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 25px 0 41px 0;
+  }
+
+  .production__button {
+    margin-bottom: 44px;
+  }
+}
+
