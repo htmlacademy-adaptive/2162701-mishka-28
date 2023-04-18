@@ -54,7 +54,7 @@
     position: absolute;
     content: "";
     background-image: url("../img/zigzag-white-tablet.svg");
-    width: 770px;
+    width: 100%;
     height: 25px;
     bottom: -15px;
     z-index: 1;
@@ -89,7 +89,7 @@
 @media (min-width: $desktop-width) {
   .promo__container::before {
     background-image: url("../../img/zigzag-white-desktop.svg");
-    width: 1150px;
+    width: 100%;
     height: 34px;
     bottom: -20px;
   }
