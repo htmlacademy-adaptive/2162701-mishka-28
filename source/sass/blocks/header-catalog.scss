@@ -1,5 +1,6 @@
 .header-catalog {
   background-color: $grey;
+  width: 100%;
 }
 
 .header-catalog__title {
@@ -11,27 +12,10 @@
   .header-catalog__title {
     padding: 101px 0 75px;
   }
-
-  .header-catalog__title::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/zigzag-white-tablet.svg");
-    width: 768px;
-    height: 24px;
-    left: 0;
-    bottom: 197px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .header-catalog__title {
     padding: 101px 0 96px;
-  }
-
-  .header-catalog__title::after {
-    background-image: url("../img/zigzag-white-desktop.svg");
-    width: 1150px;
-    height: 34px;
-    bottom: 368px;
   }
 }

@@ -1,14 +1,10 @@
-.hero {
-  width: 320px;
-}
-
 .hero__image {
   background-image: url("../img/background/background-hero-mobile.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
   background-color: $grey;
   background-size: 100% auto;
-  box-sizing: border-box;
+  background-position: 50% 5%;
 }
 
 .hero__container {
@@ -22,10 +18,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .hero {
-    width: 768px;
-  }
-
   .hero__image {
     background-image: url("../img/background/background-hero-tablet.jpg");
     height: 746px;
@@ -38,10 +30,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .hero {
-    width: 1150px;
-  }
-
   .hero__image {
     background-image: url("../img/background/background-hero-desktop.jpg");
   }

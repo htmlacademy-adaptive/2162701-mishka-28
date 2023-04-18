@@ -34,6 +34,12 @@
   margin-bottom: 33px;
 }
 
+.production__decor-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (min-width: $tablet-width) {
   .production__decor {
     margin-top: 0;

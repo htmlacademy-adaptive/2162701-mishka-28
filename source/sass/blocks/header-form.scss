@@ -10,27 +10,11 @@
 @media (min-width: $tablet-width) {
   .header-form__title {
     padding: 101px 0 75px;
-    position: relative;
-  }
-
-  .header-form__title::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/zigzag-white-tablet.svg");
-    width: 110%;
-    height: 24px;
-    left: 0;
-    bottom: -12px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header-form__title {
     padding-bottom: 95px;
-  }
-
-  .header-form__title::after {
-    background-image: url("../img/zigzag-white-desktop.svg");
-    width: 110%;
   }
 }

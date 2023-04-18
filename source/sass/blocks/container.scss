@@ -1,29 +1,31 @@
-.container {
-  //width: 320px;
-}
-
 .container__wrapper {
   padding: 0 30px;
   width: 260px;
   margin: 0 auto;
-  //width: 260px;
 }
 
 @media (min-width: $tablet-width) {
-  .container {
-    //width: 768px;
-  }
-
   .container__wrapper {
     padding: 0 50px;
     width: 668px;
     margin: 0 auto;
   }
+
+  .container__icon::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/zigzag-white-tablet.svg");
+    width: 100%;
+    height: 24px;
+    left: 0;
+    background-color: $grey;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .container {
-   // width: 1150px;
+  .container__icon::before {
+    background-image: url("../img/zigzag-white-desktop.svg");
+    width: 100%;
   }
 
   .container__wrapper {
