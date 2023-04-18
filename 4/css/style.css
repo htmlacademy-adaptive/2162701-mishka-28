@@ -1284,14 +1284,14 @@ body {
 
 @media (min-width: 768px) {
   .main-header__center {
-    width: 100%;
+    width: 768px;
   }
 
   .main-header__container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 87%;
+    width: 668px;
     padding: 0 50px;
   }
 
