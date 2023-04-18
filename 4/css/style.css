@@ -546,7 +546,7 @@ body {
 }
 @media (min-width: 1150px) {
   .promo__container::before {
-    background-image: url("../../img/zigzag-white-desktop.svg");
+    background-image: url("../img/zigzag-white-desktop.svg");
     width: 100%;
     height: 34px;
     bottom: -20px;
