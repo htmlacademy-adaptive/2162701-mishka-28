@@ -21,7 +21,7 @@
 
 @media (min-width: $tablet-width) {
   .main-header__center {
-    width: 100%;
+    width: 768px;
   }
 
   .main-header__container {
@@ -29,7 +29,7 @@
     flex-direction: column;
     //height: 88px;
     align-items: flex-end;
-    width: 87%;
+    width: 668px;
     padding: 0 50px;
   }
 
