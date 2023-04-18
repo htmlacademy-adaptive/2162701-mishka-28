@@ -1,12 +1,13 @@
 .promo__container {
   position: relative;
+  min-width: 320px;
 }
 
 .promo__list {
   list-style: none;
   padding: 0;
   padding-bottom: 14px;
-  margin-top: -121px;
+  margin: 0;
 }
 
 .promo__link {
@@ -18,7 +19,7 @@
 }
 
 .promo__item {
-  padding: 24px 0 31px 30px;
+  padding: 24px 0 31px 9vw;
   position: relative;
 
   &_light-green {
@@ -35,7 +36,7 @@
     background-image: url("../img/interior.svg");
     width: 40px;
     height: 62px;
-    right: 36px;
+    right: 11vw;
   }
 
   &_toys::before {
@@ -44,7 +45,7 @@
     background-image: url("../img/toy.svg");
     width: 60px;
     height: 60px;
-    right: 27px;
+    right: 8vw;
   }
 }
 

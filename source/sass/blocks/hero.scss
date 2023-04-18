@@ -5,20 +5,20 @@
 .hero__image {
   background-image: url("../img/background/background-hero-mobile.jpg");
   background-repeat: no-repeat;
-  height: 81vh;
   object-fit: cover;
-  background-color: $silver;
-  margin-top: -18px;
-  //background-position: 50% -30%;
+  background-color: $grey;
+  background-size: 100% auto;
+  box-sizing: border-box;
 }
 
 .hero__container {
   width: 100%;
+  margin: 0 auto;
 }
 
 .hero__title {
   text-align: center;
-  padding: 90px 7px 0;
+  padding: 90px 7px 120px;
 }
 
 @media (min-width: $tablet-width) {

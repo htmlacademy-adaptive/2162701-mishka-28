@@ -17,7 +17,7 @@
     position: absolute;
     content: "";
     background-image: url("../img/zigzag-white-tablet.svg");
-    width: 768px;
+    width: 110%;
     height: 24px;
     left: 0;
     bottom: -12px;
@@ -31,6 +31,6 @@
 
   .header-form__title::after {
     background-image: url("../img/zigzag-white-desktop.svg");
-    width: 1150px;
+    width: 110%;
   }
 }

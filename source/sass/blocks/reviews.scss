@@ -53,18 +53,17 @@
   padding: 14px 78px;
   position: relative;
   margin-bottom: 45px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-image: url("../img/zigzag-line.svg");
-    width: 320px;
-    height: 6px;
-    left: -30px;
-    right: 30px;
-    top: 94px;
-  }
 }
+
+.reviews__image::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/zigzag-line.svg");
+  width: 120%;
+  height: 6px;
+  left: 0;
+}
+
 
 @media (min-width: $tablet-width) {
   .reviews__wrapper {

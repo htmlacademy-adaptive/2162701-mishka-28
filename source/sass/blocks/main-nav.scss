@@ -1,7 +1,7 @@
 .main-nav {
   display: grid;
   z-index: 1;
-  min-height: 79px;
+  //min-height: 79px;
   background-color: $white;
   width: 100%;
   position: relative;
@@ -23,22 +23,21 @@
 
 .main-nav__button {
   position: absolute;
-  top: 30px;
-  right: 28px;
-  z-index: 2;
+  top: -58px;
+  right: 50px;
   display: block;
   width: 27px;
   height: 27px;
-  background-color: $white;
   cursor: pointer;
   border: none;
+  background-color: $white;
 }
 
 .main-nav_closed .main-nav__button::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 3px;
+  right: 2px;
   width: 21px;
   height: 2px;
   background-color: $light-black;
@@ -46,12 +45,12 @@
 }
 
 .main-nav_opened {
-  padding-top: 79px;
+  margin-top: 400px;
+  position: absolute;
 }
 
 .main-nav_opened .main-nav__button {
-  top: 26px;
-  left: auto;
+  background-color: $white;
 
   &::before,
   &::after {
@@ -61,7 +60,6 @@
     height: 2px;
     background-color: $black;
     left: 0;
-    top: 12px;
   }
 
   &::before {
@@ -115,7 +113,6 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     z-index: 0;
-    width: 668px;
     grid-template-columns: 48% 52%;
   }
 
@@ -126,10 +123,6 @@
     height: 35px;
     padding: 22px 0 22px;
     grid-column: 1/2;
-  }
-
-  .main-nav__wrapper {
-    padding: 0 50px;
   }
 
   .main-nav__button {
@@ -193,14 +186,12 @@
     gap: 37px;
     margin-top: 22px;
     position: absolute;
-    margin-left: 50px;
   }
 
   .main-nav__text {
     display: none;
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .main-nav__link_saze-l {
@@ -211,7 +202,6 @@
     display: grid;
     grid-template-columns: 43% 14% 43%;
     justify-items: start;
-    width: 1050px;
   }
 
   .main-nav::before {
@@ -269,6 +259,5 @@
     margin-top: 20px;
     position: absolute;
     top: 88px;
-    left: 50px;
   }
 }
