@@ -19,6 +19,15 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__button {
@@ -102,6 +111,10 @@
   position: absolute;
   left: 10%;
   top: 31px;
+}
+
+.main-nav__item {
+  position: relative;
 }
 
 .main-nav__item-box {
@@ -270,5 +283,6 @@
     position: absolute;
     grid-column: 1/2;
     grid-row: 2/3;
+    z-index: 2;
   }
 }

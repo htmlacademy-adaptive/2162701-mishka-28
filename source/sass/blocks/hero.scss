@@ -8,7 +8,7 @@
 }
 
 .hero__container {
-  width: 100%;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -21,11 +21,14 @@
   .hero__image {
     background-image: url("../img/background/background-hero-tablet.jpg");
     height: 746px;
-    margin: 0;
   }
 
   .hero__title {
     padding-top: 155px;
+  }
+
+  .hero__container {
+    width: 768px;
   }
 }
 
@@ -37,5 +40,9 @@
   .hero__title {
     padding-right: 12%;
     padding-left: 12%;
+  }
+
+  .hero__container {
+    width: 1150px;
   }
 }

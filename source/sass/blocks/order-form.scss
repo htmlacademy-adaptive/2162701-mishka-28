@@ -130,15 +130,30 @@
 .order-form__form-input,
 .order-form__input {
   border: none;
-  color: $black;
+  color: $anthracite;
   font-size: 17px;
   line-height: 18px;
   font-family: "open sans", sans-serif;
+  box-shadow: inset 0 -2px 0 $black;
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 -2px 0 $downy-light-green;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: inset 0 -2px 0 $downy-light-green;
+  }
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 $downy-light-green;
+  }
 }
 
 .order-form__form-input {
   padding: 17px 0;
-  border-bottom: 2px solid $black;
+  //box-shadow: inset 0 -2px 0 $black;
 }
 
 input::placeholder,
@@ -150,7 +165,7 @@ textarea::placeholder {
 .order-form__input {
   position: relative;
   padding: 20px 0 17px;
-  border-bottom: 2px solid $black;
+  //border-bottom: 2px solid $black;
   margin-bottom: 34px;
   width: 100%;
   font-family: inherit;
@@ -167,6 +182,19 @@ textarea::placeholder {
   border: 2px solid $anthracite;
   resize: none;
   font-family: inherit;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $downy-light-green;
+  }
+
+  &:active {
+    border: 2px solid $downy-light-green;
+  }
+
+  &:hover {
+    border: 2px solid $downy-light-green;
+  }
 }
 
 .order-form__descr-form {

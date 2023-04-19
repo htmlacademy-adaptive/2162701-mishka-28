@@ -5,18 +5,18 @@
 .main-container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 320px;
   flex-grow: 1;
 }
 
 @media (min-width: $tablet-width) {
   .main-container {
-    //width: 768px;
+    width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-container {
-    //width: 1150px;
+    width: 1150px;
   }
 }

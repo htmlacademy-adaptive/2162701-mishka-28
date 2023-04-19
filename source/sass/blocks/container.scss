@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+.container__icon {
+  position: relative;
+}
+
 @media (min-width: $tablet-width) {
   .container__wrapper {
     padding: 0 50px;
@@ -15,9 +19,10 @@
     position: absolute;
     content: "";
     background-image: url("../img/zigzag-white-tablet.svg");
-    width: 100%;
+    width: 768px;
     height: 24px;
-    left: 0;
+    right: 0;
+    //left: 0;
     background-color: $grey;
   }
 }
@@ -25,7 +30,7 @@
 @media (min-width: $desktop-width) {
   .container__icon::before {
     background-image: url("../img/zigzag-white-desktop.svg");
-    width: 100%;
+    width: 1150px;
   }
 
   .container__wrapper {
