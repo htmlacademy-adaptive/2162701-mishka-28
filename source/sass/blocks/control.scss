@@ -32,14 +32,14 @@
   top: -12px;
 }
 
-.control:hover .control__mark-radio,
-.control:hover .control__mark-checkbox {
+.control__input-radio:focus-visible + .control__mark-radio,
+.control__input-checkbox:focus-visible + .control__mark-checkbox {
   border-color: $downy-light-green;
 }
 
-.control_input:disabled + .control__mark-radio,
-.control_input:disabled + .control__mark-checkbox {
-  border-color: $anthracite;
+.control__input-radio:hover .control__mark-radio,
+.control__input-checkbox:hover .control__mark-checkbox {
+  border-color: $downy-light-green;
 }
 
 .control input[type="checkbox"]:checked + .control__mark-checkbox::after {

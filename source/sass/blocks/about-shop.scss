@@ -1,13 +1,13 @@
-.about-shop__wrapper {
+.about-shop {
   position: relative;
 
   &::before {
     position: absolute;
     content: "";
     background-image: url("../img/zigzag-line.svg");
-    width: 120%;
+    width: 320px;
     height: 6px;
-    left: -9vw;
+    left: 0;
     top: 0;
   }
 }
@@ -170,11 +170,11 @@
     left: 2px;
   }
 
-  .about-shop__wrapper::before {
+  .about-shop::before {
     position: absolute;
     content: "";
     background-image: url("../img/zigzag-line-tablet.svg");
-    width: 772px;
+    min-width: 768px;
     height: 17px;
     left: 0;
     top: -46px;
@@ -182,9 +182,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .about-shop__wrapper::before {
+  .about-shop::before {
     background-image: url("../img/zigzag-line-desktop.svg");
-    width: 1050px;
+    min-width: 1050px;
     height: 23px;
     top: 0;
     left: 50px;

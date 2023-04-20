@@ -55,11 +55,15 @@
   margin-bottom: 45px;
 }
 
-.reviews__image::after {
+.reviews {
+  position: relative;
+}
+
+.reviews::after {
   position: absolute;
   content: "";
   background-image: url("../img/zigzag-line.svg");
-  width: 120%;
+  min-width: 320px;
   height: 6px;
   left: 0;
 }
@@ -76,13 +80,13 @@
     position: relative;
   }
 
-  .reviews__image::after {
+  .reviews::after {
     position: absolute;
     content: "";
     background-image: url("../img/zigzag-line-tablet.svg");
-    width: 772px;
+    width: 768px;
     height: 17px;
-    bottom: -86px;
+    bottom: 17px;
     left: 0;
   }
 
@@ -175,12 +179,13 @@
     margin-top: 44px;
   }
 
-  .reviews__image::after {
+  .reviews::after {
     position: absolute;
     content: "";
     background-image: url("../img/zigzag-line-desktop.svg");
-    width: 1050px;
+    min-width: 1050px;
     height: 23px;
-    left: auto;
+    left: 50px;
+    bottom: 53px;
   }
 }

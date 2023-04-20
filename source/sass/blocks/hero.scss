@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-color: $grey;
-  background-size: 100% auto;
+  background-size: 100% 126%;
   background-position: 50% 5%;
 }
 
@@ -21,6 +21,7 @@
   .hero__image {
     background-image: url("../img/background/background-hero-tablet.jpg");
     height: 746px;
+    background-size: 100% 100%;
   }
 
   .hero__title {
