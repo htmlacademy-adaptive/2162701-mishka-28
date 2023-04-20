@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Мишка - милые штуки ручной работы для дома</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon/favicon-apple.png" sizes="180x180">
+  <link rel="manifest" href="manifest.webmanifest">
   <base href="https://htmlacademy-adaptive.github.io/2162701-mishka-28/4/">
 </head>
 
@@ -89,11 +92,13 @@
       <div class="container container__icon container__wrapper">
         <ul class="catalog__list">
           <li class="catalog__item">
-            <picture class="catalog__image">
-              <source media="(min-width:1150px)" srcset="img/catalog/photo-1-desktop.jpg" width="316" height="462">
-              <source media="(min-width:768px)" srcset="img/catalog/photo-1-tablet.jpg" width="334" height="334">
-              <img src="img/catalog/photo-1-mobile.jpg" width="260" height="195" alt="Вязанный заяц.">
-            </picture>
+            <div class="catalog__image">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/catalog/photo-1-desktop.jpg" width="316" height="462">
+                <source media="(min-width:768px)" srcset="img/catalog/photo-1-tablet.jpg" width="334" height="334">
+                <img src="img/catalog/photo-1-mobile.jpg" width="260" height="195" alt="Вязанный заяц.">
+              </picture>
+            </div>
             <div class="catalog__decor-border">
               <div class="catalog__decor-wrapper">
                 <a class="title-catalog catalog__link" href="#">Зайчик-попрыгайчик</a>
@@ -112,11 +117,13 @@
             </div>
           </li>
           <li class="catalog__item">
-            <picture class="catalog__image">
-              <source media="(min-width:1150px)" srcset="img/catalog/photo-2-desktop.jpg" width="315" height="462">
-              <source media="(min-width:768px)" srcset="img/catalog/photo-2-tablet.jpg" width="334" height="334">
-              <img src="img/catalog/photo-2-mobile.jpg" width="260" height="195" alt="Вязанный корзинка.">
-            </picture>
+            <div class="catalog__image">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/catalog/photo-2-desktop.jpg" width="315" height="462">
+                <source media="(min-width:768px)" srcset="img/catalog/photo-2-tablet.jpg" width="334" height="334">
+                <img src="img/catalog/photo-2-mobile.jpg" width="260" height="195" alt="Вязанный корзинка.">
+              </picture>
+            </div>
             <div class="catalog__decor-border">
               <div class="catalog__decor-wrapper">
                 <a class="title-catalog catalog__link catalog__link_indent" href="#">Корзинка для белья</a>
@@ -135,15 +142,18 @@
             </div>
           </li>
           <li class="catalog__item">
-            <picture class="catalog__image">
-              <source media="(min-width:1150px)" srcset="img/catalog/photo-3-desktop.jpg" width="316" height="462">
-              <source media="(min-width:768px)" srcset="img/catalog/photo-3-tablet.jpg" width="334" height="334">
-              <img class="catalog__image" src="img/catalog/photo-3-mobile.jpg" width="260" height="195"
-                alt="Большая вязанная корзина>.">
-            </picture>
+            <div class="catalog__image">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/catalog/photo-3-desktop.jpg" width="316" height="462">
+                <source media="(min-width:768px)" srcset="img/catalog/photo-3-tablet.jpg" width="334" height="334">
+                <img class="catalog__image" src="img/catalog/photo-3-mobile.jpg" width="260" height="195"
+                  alt="Большая вязанная корзина>.">
+              </picture>
+            </div>
             <div class="catalog__decor-border">
               <div class="catalog__decor-wrapper">
-                <a class="title-catalog catalog__link catalog__link_indent-s" href="#">Большая корзинка для&nbsp;игрушек</a>
+                <a class="title-catalog catalog__link catalog__link_indent-s" href="#">Большая корзинка
+                  для&nbsp;игрушек</a>
                 <p class="catalog__descr">Диаметр 30 см, высота 30 см</p>
               </div>
               <div class="catalog__decor">
@@ -166,12 +176,13 @@
     <article class="production container container__wrapper">
       <div class="production__decor">
         <h2 class="title-catalog production__title">Процесс производства</h2>
-        <picture class="production__image">
-          <source media="(min-width:1150px)" srcset="img/catalog/video-desktop.jpg" width="682" height="455">
-          <source media="(min-width:768px)" srcset="img/catalog/video-tablet.jpg" width="668" height="455">
-          <img src="img/catalog/video-mobile.jpg" width="260" height="150"
-            alt="вязанная корзина.">
-        </picture>
+        <div class="production__image">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/catalog/video-desktop.jpg" width="682" height="455">
+            <source media="(min-width:768px)" srcset="img/catalog/video-tablet.jpg" width="668" height="455">
+            <img src="img/catalog/video-mobile.jpg" width="260" height="150" alt="вязанная корзина.">
+          </picture>
+        </div>
         <div class="production__decor-wrapper">
           <p class="production__descr">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.

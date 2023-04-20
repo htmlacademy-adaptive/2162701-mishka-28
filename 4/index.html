@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Мишка - милые штуки ручной работы для дома</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon/favicon-apple.png" sizes="180x180">
+  <link rel="manifest" href="manifest.webmanifest">
   <base href="https://htmlacademy-adaptive.github.io/2162701-mishka-28/4/">
 </head>
 
@@ -117,19 +120,21 @@
             <dd class="week-product__text">тиффани/серый</dd>
           </div>
           <div class="week-product__item">
-          <dt class="week-product__name">Диаметр:</dt>
-          <dd class="week-product__text">25 см</dd>
+            <dt class="week-product__name">Диаметр:</dt>
+            <dd class="week-product__text">25 см</dd>
           </div>
           <div class="week-product__item">
             <dt class="week-product__name">Высота:</dt>
             <dd class="week-product__text">15 см</dd>
           </div>
         </dl>
-        <picture class="week-product__image">
-          <source media="(min-width:1150px)" srcset="img/index/knittd-baskets-desktop.png" width="525" height="636">
-          <source media="(min-width:768px)" srcset="img/index/knitted-baskets-tablet.jpg" width="334" height="404">
-          <img src="img/index/knitted-baskets.jpg" width="260" height="315" alt="Вязаные корзинки.">
-        </picture>
+        <div class="week-product__image">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/index/knittd-baskets-desktop.png" width="525" height="636">
+            <source media="(min-width:768px)" srcset="img/index/knitted-baskets-tablet.jpg" width="334" height="404">
+            <img src="img/index/knitted-baskets.jpg" width="260" height="315" alt="Вязаные корзинки.">
+          </picture>
+        </div>
         <div class="week-product__price-button">
           <span class="week-product__price">Цена: 990 руб.</span>
           <button class="button week-product__button" type="button">Заказать</button>
@@ -166,57 +171,58 @@
     <section class="reviews">
       <div class="container container__wrapper reviews__image">
         <div class="reviews__wrapper">
-        <h2 class="title reviews__title">Отзывы</h2>
-        <div class="reviews__slider reviews__slider-open">
-          <p class="reviews__description">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-            лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке,
-            и&nbsp;мои
-            фотографии
-            сразу стали более стильными,&nbsp;а&nbsp;также набирают больше лайков!
-          </p>
-          <span class="reviews__name">Анастасия Красильникова</span>
-          <a class="reviews__link" href="#">@misssssiskras</a>
+          <h2 class="title reviews__title">Отзывы</h2>
+          <div class="reviews__slider reviews__slider-open">
+            <p class="reviews__description">
+              Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+              лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке,
+              и&nbsp;мои
+              фотографии
+              сразу стали более стильными,&nbsp;а&nbsp;также набирают больше лайков!
+            </p>
+            <span class="reviews__name">Анастасия Красильникова</span>
+            <a class="reviews__link" href="#">@misssssiskras</a>
+          </div>
+          <div class="reviews__slider">
+            <p class="reviews__description">
+              Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у
+              популярных
+              инстамамочек. В отчаянии, я накупила аксессуаров
+              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+            <span class="reviews__name">Екатерина Красильникова</span>
+            <a class="reviews__link" href="#">misssssiskras2</a>
+          </div>
+          <div class="reviews__slider">
+            <p class="reviews__description">
+              Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков,
+              как
+              у
+              популярных инстамамочек. В отчаянии, я накупила аксессуаров
+              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+            <span class="reviews__name">Елена Красильникова</span>
+            <a class="reviews__link" href="#">@misssssiskras3</a>
+          </div>
+          <div class="reviews__button-decor">
+            <button class="reviews__button-icon reviews__button-icon_prev" type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+              <svg aria-hidden="true" focusable="false" width="50" height="26" viewBox="0 0 50 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
+              </svg>
+            </button>
+            <button class="reviews__button-icon reviews__button-icon_next" type="button">
+              <span class="visually-hidden">Следющий отзыв</span>
+              <svg aria-hidden="true" focusable="false" width="50" height="26" viewBox="0 0 50 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
+              </svg>
+            </button>
+          </div>
+          <button class="button reviews__button" type="button">Написать</button>
         </div>
-        <div class="reviews__slider">
-          <p class="reviews__description">
-            Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у
-            популярных
-            инстамамочек. В отчаянии, я накупила аксессуаров
-            и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-          </p>
-          <span class="reviews__name">Екатерина Красильникова</span>
-          <a class="reviews__link" href="#">misssssiskras2</a>
-        </div>
-        <div class="reviews__slider">
-          <p class="reviews__description">
-            Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как
-            у
-            популярных инстамамочек. В отчаянии, я накупила аксессуаров
-            и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-          </p>
-          <span class="reviews__name">Елена Красильникова</span>
-          <a class="reviews__link" href="#">@misssssiskras3</a>
-        </div>
-        <div class="reviews__button-decor">
-          <button class="reviews__button-icon reviews__button-icon_prev" type="button">
-            <span class="visually-hidden">Предыдущий отзыв</span>
-            <svg aria-hidden="true" focusable="false" width="50" height="26" viewBox="0 0 50 26" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
-            </svg>
-          </button>
-          <button class="reviews__button-icon reviews__button-icon_next" type="button">
-            <span class="visually-hidden">Следющий отзыв</span>
-            <svg aria-hidden="true" focusable="false" width="50" height="26" viewBox="0 0 50 26" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
-            </svg>
-          </button>
-        </div>
-        <button class="button reviews__button" type="button">Написать</button>
       </div>
-    </div>
     </section>
 
     <section class="contacts">
