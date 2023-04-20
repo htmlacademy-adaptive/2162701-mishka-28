@@ -37,8 +37,8 @@
   border-color: $downy-light-green;
 }
 
-.control__input-radio:hover .control__mark-radio,
-.control__input-checkbox:hover .control__mark-checkbox {
+.control:hover .control__mark-radio,
+.control:hover .control__mark-checkbox {
   border-color: $downy-light-green;
 }
 

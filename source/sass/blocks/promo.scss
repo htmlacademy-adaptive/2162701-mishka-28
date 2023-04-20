@@ -102,7 +102,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .promo__container::before {
+  .promo__container::backdrop {
     background-image: url("../img/zigzag-white-desktop.svg");
     width: 100%;
     height: 34px;

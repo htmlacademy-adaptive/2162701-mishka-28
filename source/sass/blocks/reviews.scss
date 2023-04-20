@@ -95,6 +95,11 @@
     background-repeat: no-repeat;
     object-fit: cover;
     position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/review-background@2.jpg");
+      background-size: 350px 100%;
+    }
   }
 
   .reviews__title {

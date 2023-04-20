@@ -5,6 +5,11 @@
   background-color: $grey;
   background-size: 100% 126%;
   background-position: 50% 5%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/background-hero-mobile@2.jpg");
+    background-size: 360px 126%;
+  }
 }
 
 .hero__container {
@@ -22,6 +27,11 @@
     background-image: url("../img/background/background-hero-tablet.jpg");
     height: 746px;
     background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-hero-tablet@2.jpg");
+      background-size: 768px 100%;
+    }
   }
 
   .hero__title {
@@ -36,6 +46,11 @@
 @media (min-width: $desktop-width) {
   .hero__image {
     background-image: url("../img/background/background-hero-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-hero-desktop@2.jpg");
+      background-size: 1150px 100%;
+    }
   }
 
   .hero__title {
