@@ -1,65 +1,64 @@
-.hero {
-  width: 320px;
-}
-
 .hero__image {
   background-image: url("../img/background/background-hero-mobile.jpg");
   background-repeat: no-repeat;
-  border-top: 1px solid $light-grey;
-  margin-top: -24px;
+  object-fit: cover;
+  background-color: $grey;
+  background-size: 100% 126%;
+  background-position: 50% 5%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/background-hero-mobile@2.jpg");
+    background-size: 360px 126%;
+  }
 }
 
 .hero__container {
   width: 320px;
+  margin: 0 auto;
 }
 
 .hero__title {
   text-align: center;
-  padding-top: 73px;
-  padding-bottom: 110px;
+  padding: 90px 7px 120px;
 }
 
-.hero__list {
-  list-style: none;
-  padding: 0;
-  margin: 30px 0;
+@media (min-width: $tablet-width) {
+  .hero__image {
+    background-image: url("../img/background/background-hero-tablet.jpg");
+    height: 746px;
+    background-size: 100% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-hero-tablet@2.jpg");
+      background-size: 768px 100%;
+    }
+  }
+
+  .hero__title {
+    padding-top: 155px;
+  }
+
+  .hero__container {
+    width: 768px;
+  }
 }
 
-.hero__link {
-  text-decoration: none;
-  color: $white;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 24px;
-}
+@media (min-width: $desktop-width) {
+  .hero__image {
+    background-image: url("../img/background/background-hero-desktop.jpg");
 
-.hero__item {
-  padding: 24px 0 31px 30px;
-  position: relative;
-
-  &_light-green {
-    background-color: $downy-green;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-hero-desktop@2.jpg");
+      background-size: 1150px 100%;
+    }
   }
 
-  &_green {
-    background-color: $blue-green;
+  .hero__title {
+    padding-right: 12%;
+    padding-left: 12%;
   }
 
-  &_interior::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/interior.svg");
-    width: 40px;
-    height: 62px;
-    right: 36px;
-  }
-
-  &_toys::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/toy.svg");
-    width: 60px;
-    height: 60px;
-    right: 27px;
+  .hero__container {
+    width: 1150px;
   }
 }

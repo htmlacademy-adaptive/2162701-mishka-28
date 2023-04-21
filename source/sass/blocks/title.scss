@@ -19,6 +19,7 @@
   display: block;
   text-transform: uppercase;
   margin: 0;
+  padding: 0;
 }
 
 .title-catalog {
@@ -28,4 +29,22 @@
   display: block;
   color: $black;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .title-catalog {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

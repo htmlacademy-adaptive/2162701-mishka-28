@@ -6,3 +6,15 @@
   text-align: center;
   padding: 73px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .header-form__title {
+    padding: 101px 0 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-form__title {
+    padding-bottom: 95px;
+  }
+}

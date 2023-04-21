@@ -1,7 +1,21 @@
 .header-catalog {
   background-color: $grey;
+  width: 100%;
 }
 
 .header-catalog__title {
-  margin: 73px 0;
+  padding: 73px 0;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .header-catalog__title {
+    padding: 101px 0 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-catalog__title {
+    padding: 101px 0 96px;
+  }
 }
