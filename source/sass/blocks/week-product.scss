@@ -1,3 +1,7 @@
+.week-product__wrapper {
+  margin-top: 30px;
+}
+
 .week-product__decor {
   display: flex;
   flex-direction: column;
@@ -53,6 +57,11 @@
   margin-bottom: 25px;
 }
 
+.week-product__img {
+  width: 100%;
+  height: auto;
+}
+
 .week-product__price {
   display: block;
   text-align: center;
@@ -78,9 +87,10 @@
 @media (min-width: $tablet-width) {
   .week-product__wrapper {
     display: grid;
-    grid-template-columns: 50% 34% 16%;
+    grid-template-columns: 43.7% 34% 10.3%;
     margin-bottom: 69px;
     margin-top: 40px;
+    gap: 0 40px;
   }
 
   .week-product__title {
@@ -91,7 +101,6 @@
   .week-product__offer {
     line-height: 17px;
     text-align: center;
-    padding: 6px 18px 0 0;
     grid-column: 3/4;
     grid-row: 1/2;
   }
@@ -142,6 +151,7 @@
   .week-product__wrapper {
     grid-template-columns: 16.5% 33.5% 50%;
     margin-top: 72px;
+    gap: 0;
   }
 
   .week-product__title {

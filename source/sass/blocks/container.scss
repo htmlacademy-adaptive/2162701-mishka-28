@@ -1,6 +1,6 @@
 .container__wrapper {
   padding: 0 30px;
-  width: 260px;
+  min-width: 81%;
   margin: 0 auto;
 }
 
@@ -11,7 +11,6 @@
 @media (min-width: $tablet-width) {
   .container__wrapper {
     padding: 0 50px;
-    width: 668px;
     margin: 0 auto;
   }
 
@@ -19,10 +18,9 @@
     position: absolute;
     content: "";
     background-image: url("../img/zigzag-white-tablet.svg");
-    width: 768px;
+    width: 100%;
     height: 24px;
     right: 0;
-    //left: 0;
     background-color: $grey;
   }
 }
@@ -35,7 +33,6 @@
 
   .container__wrapper {
     padding: 0 50px;
-    width: 1050px;
     margin: 0 auto;
   }
 }
