@@ -147,6 +147,11 @@
     display: none;
   }
 
+  .main-nav_opened {
+    margin-top: 0;
+    position: relative;
+  }
+
   .main-nav__item-box {
     box-shadow: none;
     padding: 0;
@@ -186,6 +191,7 @@
     position: relative;
     justify-content: flex-end;
     gap: 21px;
+    min-width: 362px;
   }
 
   .main-nav__list-user::after {
