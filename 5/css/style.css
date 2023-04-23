@@ -287,6 +287,11 @@ body {
     display: none;
   }
 
+  .main-nav_opened {
+    margin-top: 0;
+    position: relative;
+  }
+
   .main-nav__item-box {
     box-shadow: none;
     padding: 0;
@@ -326,6 +331,7 @@ body {
     position: relative;
     justify-content: flex-end;
     gap: 21px;
+    min-width: 362px;
   }
 
   .main-nav__list-user::after {
@@ -1078,6 +1084,7 @@ body {
 
   .catalog__image {
     margin: 0;
+    min-width: 334px;
   }
 
   .catalog__link {
@@ -1118,7 +1125,8 @@ body {
   }
 
   .catalog__image {
-    height: 462px;
+    height: auto;
+    min-width: auto;
   }
 
   .catalog__decor-border:hover {
@@ -1651,6 +1659,7 @@ body {
 
 .order-form__filter-item_radio {
   margin-top: 24px;
+  width: 260px;
 }
 
 .order-form__filter-item_checkbox {
@@ -1815,6 +1824,7 @@ textarea::placeholder {
 
   .order-form__filter-item_radio {
     margin-top: 58px;
+    width: auto;
   }
 
   .order-form__checkbox {
