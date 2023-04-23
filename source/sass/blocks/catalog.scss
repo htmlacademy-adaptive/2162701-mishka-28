@@ -96,6 +96,7 @@
 
   .catalog__image {
     margin: 0;
+    min-width: 334px;
   }
 
   .catalog__link {
@@ -137,7 +138,8 @@
   }
 
   .catalog__image {
-    height: 462px;
+    height: auto;
+    min-width: auto;
   }
 
   .catalog__decor-border:hover {
