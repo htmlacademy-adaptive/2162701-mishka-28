@@ -2,8 +2,8 @@
   background-image: url("../img/background/background-hero-mobile.jpg");
   background-repeat: no-repeat;
   object-fit: cover;
-  background-color: $grey;
-  background-size: 100% 126%;
+  background-color: $alabaster-grey;
+  background-size: 360px 126%;
   background-position: 50% 5%;
 
   @media (min-resolution: 2dppx) {
@@ -13,13 +13,14 @@
 }
 
 .hero__container {
-  width: 320px;
   margin: 0 auto;
 }
 
 .hero__title {
   text-align: center;
   padding: 90px 7px 120px;
+  width: 308px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,10 +37,7 @@
 
   .hero__title {
     padding-top: 155px;
-  }
-
-  .hero__container {
-    width: 768px;
+    width: 65%;
   }
 }
 
@@ -56,9 +54,5 @@
   .hero__title {
     padding-right: 12%;
     padding-left: 12%;
-  }
-
-  .hero__container {
-    width: 1150px;
   }
 }

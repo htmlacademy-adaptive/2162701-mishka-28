@@ -1,13 +1,13 @@
 .main-header__center {
   margin: 0 auto;
-  width: 320px;
+  min-width: 100%;
 }
 
 .main-header__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  min-width: 81%;
   padding: 0;
   position: relative;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
@@ -20,16 +20,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-header__center {
-    width: 768px;
-  }
-
   .main-header__container {
     display: flex;
     flex-direction: column;
     //height: 88px;
     align-items: flex-end;
-    width: 668px;
     padding: 0 50px;
   }
 
@@ -47,11 +42,7 @@
 
 @media (min-width: $desktop-width) {
   .main-header__center {
-    width: 1150px;
-  }
-
-  .main-header__container {
-    width: 1050px;
+    min-width: 1150px;
   }
 
   .main-header__logo-link {

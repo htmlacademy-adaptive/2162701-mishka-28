@@ -5,14 +5,8 @@
 .main-container {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 100%;
   flex-grow: 1;
-}
-
-@media (min-width: $tablet-width) {
-  .main-container {
-    width: 768px;
-  }
 }
 
 @media (min-width: $desktop-width) {

@@ -8,9 +8,16 @@
   margin-top: 30px;
   display: block;
   //border: 1px solid $light-grey;
-  object-fit: contain;
+  border-style: none;
   box-shadow: inset 0 0 0 1px $light-grey;
-  height: 195px;
+  //min-height: 195px;
+}
+
+.catalog__img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
 }
 
 .catalog__link {
@@ -60,8 +67,9 @@
   justify-content: space-between;
   align-items: baseline;
   border-top: 1px solid $light-grey;
-  width: 210px;
-  margin-left: 28px;
+  min-width: 210px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .catalog__decor-border {
@@ -88,7 +96,7 @@
 
   .catalog__image {
     margin: 0;
-    height: 334px;
+    min-width: 334px;
   }
 
   .catalog__link {
@@ -130,7 +138,8 @@
   }
 
   .catalog__image {
-    height: 462px;
+    height: auto;
+    min-width: auto;
   }
 
   .catalog__decor-border:hover {
