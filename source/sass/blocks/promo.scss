@@ -70,7 +70,7 @@
   .promo__container::before {
     position: absolute;
     content: "";
-    background-image: url("../img/zigzag-white-tablet.svg");
+    background-image: url("../icons/zigzag-white-tablet.svg");
     width: 100%;
     height: 25px;
     bottom: -10px;
@@ -104,7 +104,7 @@
 
 @media (min-width: $desktop-width) {
   .promo__container::before {
-    background-image: url("../img/zigzag-white-desktop.svg");
+    background-image: url("../icons/zigzag-white-desktop.svg");
     width: 100%;
     height: 34px;
     bottom: -16px;

@@ -47,7 +47,7 @@
   content: "";
   width: 23px;
   height: 16px;
-  background-image: url("../img/tick.svg");
+  background-image: url("../icons/tick.svg");
   top: 8px;
   left: 5px;
 }
@@ -85,7 +85,7 @@
   .control input[type="checkbox"]:checked + .control__mark-checkbox::after {
     width: 32px;
     height: 22px;
-    background-image: url("../img/tick-big.svg");
+    background-image: url("../icons/tick-big.svg");
     top: 16px;
     left: 9px;
   }

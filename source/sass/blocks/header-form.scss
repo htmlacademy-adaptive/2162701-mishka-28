@@ -4,17 +4,17 @@
 
 .header-form__title {
   text-align: center;
-  padding: 73px 0;
+  padding: 70px 0;
 }
 
 @media (min-width: $tablet-width) {
   .header-form__title {
-    padding: 101px 0 75px;
+    padding: 101px 0 68px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header-form__title {
-    padding-bottom: 95px;
+    padding-bottom: 80px;
   }
 }
