@@ -3,12 +3,12 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-color: $alabaster-grey;
-  background-size: 360px 126%;
-  background-position: 50% 5%;
+  background-size: 320px 136%;
+  background-position: 50% 25%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background/background-hero-mobile@2.jpg");
-    background-size: 360px 126%;
+    background-size: 320px 136%;
   }
 }
 
@@ -18,7 +18,7 @@
 
 .hero__title {
   text-align: center;
-  padding: 90px 7px 120px;
+  padding: 70px 7px 120px;
   width: 308px;
   margin: 0 auto;
 }
@@ -27,23 +27,24 @@
   .hero__image {
     background-image: url("../img/background/background-hero-tablet.jpg");
     height: 746px;
-    background-size: 100% 100%;
+    background-size: 768px 746px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/background-hero-tablet@2.jpg");
-      background-size: 768px 100%;
+      background-size: 768px 746px;
     }
   }
 
   .hero__title {
     padding-top: 155px;
-    width: 65%;
+    width: 510px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero__image {
     background-image: url("../img/background/background-hero-desktop.jpg");
+    background-size: 1150px 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/background-hero-desktop@2.jpg");
@@ -54,5 +55,6 @@
   .hero__title {
     padding-right: 12%;
     padding-left: 12%;
+    width: auto;
   }
 }

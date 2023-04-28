@@ -19,6 +19,14 @@
   padding: 22px 0 22px;
 }
 
+.main-header__logo-link:hover .main-header__logo-image {
+  opacity: 0.6;
+}
+
+.main-header__logo-link:active .main-header__logo-image {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .main-header__container {
     display: flex;

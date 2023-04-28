@@ -81,6 +81,22 @@
   border: none;
   background-color: $white;
   cursor: pointer;
+  padding: 15px;
+  padding-right: 0;
+}
+
+.catalog__icon-basket {
+  fill: $black;
+  opacity: 0.2;
+
+  &:hover {
+    fill: $downy-green;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -137,16 +153,16 @@
     flex-direction: column;
   }
 
-  .catalog__image {
-    height: auto;
-    min-width: auto;
-  }
-
-  .catalog__decor-border:hover {
+  .catalog__item:hover .catalog__decor-border {
     box-shadow: 0 6px 10px $light-grey;
   }
 
-  .catalog__decor-border:active {
+  .catalog__item:active .catalog__decor-border {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .catalog__image {
+    height: auto;
+    min-width: auto;
   }
 }

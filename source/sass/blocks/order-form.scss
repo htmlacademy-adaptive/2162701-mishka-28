@@ -43,15 +43,17 @@
   width: 70%;
 }
 
-.order-form__label-title_phone::before {
+/*.order-form__label-title_phone::before {
   position: absolute;
   content: "";
-  background-image: url("../img/phone.svg");
+  mask: url("../img/phone.svg");
   width: 25px;
   height: 24px;
   right: 7px;
   top: 32px;
   z-index: 1;
+  background: $black;
+  opacity: 0.2;
 }
 
 .order-form__label-title_mail::before {
@@ -63,7 +65,7 @@
   right: 3px;
   top: 36px;
   z-index: 1;
-}
+}*/
 
 .order-form__form {
   border: none;
@@ -169,11 +171,34 @@ textarea::placeholder {
 
 .order-form__input {
   position: relative;
-  padding: 20px 0 17px;
+  padding: 20px 40px 17px 0;
   //border-bottom: 2px solid $black;
   margin-bottom: 34px;
   width: 100%;
   font-family: inherit;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.order-form__icon_phone,
+.order-form__icon_mail {
+  position: absolute;
+  right: 37px;
+  margin-top: 12px;
+  fill: $black;
+  opacity: 0.2;
+}
+
+input:focus ~ .order-form__icon_phone,
+input:focus ~ .order-form__icon_mail {
+  fill: $downy-light-green;
+  opacity: 1;
+}
+
+input:hover ~ .order-form__icon_phone,
+input:hover ~ .order-form__icon_mail {
+  fill: $downy-light-green;
+  opacity: 1;
 }
 
 .order-form__textarea {
@@ -337,23 +362,29 @@ textarea::placeholder {
     margin-bottom: 11px;
   }
 
+  .order-form__icon_phone,
+  .order-form__icon_mail {
+    right: 70px;
+    margin-top: 0;
+  }
+
   .order-form__label-title_phone {
     padding-right: 135px;
   }
 
-  .order-form__label-title_phone::before {
+  /*.order-form__label-title_phone::before {
     left: 79vw;
     top: -6px;
-  }
+  }*/
 
   .order-form__label-title_mail {
     padding-right: 100px;
   }
 
-  .order-form__label-title_mail::before {
+  /*.order-form__label-title_mail::before {
     left: 79vw;
     top: 0;
-  }
+  }*/
 
   .order-form__feedback {
     padding-top: 48px;
@@ -442,13 +473,19 @@ textarea::placeholder {
     width: 71%;
   }
 
-  .order-form__label-title_mail::before {
+  .order-form__icon_phone,
+  .order-form__icon_mail {
+    right: 270px;
+    margin-top: 0;
+  }
+
+ /* .order-form__label-title_mail::before {
     left: 780px;
   }
 
   .order-form__label-title_phone::before {
     left: 780px;
-  }
+  }*/
 
   .order-form__feedback {
     padding-left: 110px;
