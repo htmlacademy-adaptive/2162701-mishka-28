@@ -3,12 +3,12 @@
   background-repeat: no-repeat;
   object-fit: cover;
   background-color: $alabaster-grey;
-  background-size: 320px 136%;
-  background-position: 50% 25%;
+  background-size: 320px 132%;
+  background-position: 50% 20%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background/background-hero-mobile@2.jpg");
-    background-size: 320px 136%;
+    background-size: 320px 132%;
   }
 }
 
@@ -18,7 +18,7 @@
 
 .hero__title {
   text-align: center;
-  padding: 70px 7px 120px;
+  padding: 72px 6px 120px;
   width: 308px;
   margin: 0 auto;
 }

@@ -98,8 +98,8 @@
           <li class="promo__item promo__item_green">
             <a class="promo__link" href="#">
               Детские <br> игрушки
-              <svg class="promo__icon promo__icon_toys" width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"
-                id="toys">
+              <svg class="promo__icon promo__icon_toys" width="60" height="60" viewBox="0 0 60 60"
+                xmlns="http://www.w3.org/2000/svg" id="toys">
                 <use href="icons/sprite.svg#toys"></use>
               </svg>
             </a>
@@ -131,6 +131,12 @@
         </dl>
         <div class="week-product__image">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="img/index/knittd-baskets-desktop.webp 1x, img/index/knittd-baskets-desktop@2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/index/knitted-baskets-tablet.webp 1x, img/index/knitted-baskets-tablet@2.webp 2x">
+            <source type="image/webp" srcset="img/index/knitted-baskets-mobile.webp 1x, img/index/knitted-baskets-mobile@2.webp 2x">
+
             <source class="week-product__img" media="(min-width:1150px)"
               srcset="img/index/knittd-baskets-desktop.png 1x, img/index/knittd-baskets-desktop@2.png" width="525"
               height="636">
@@ -306,7 +312,7 @@
           <svg class="main-footer__logo-icon" width="27" height="35" id="htmlAcademy">
             <use href="icons/sprite.svg#htmlAcademy"></use>
           </svg>
-            <span class="visually-hidden">Логотип html academy</span>
+          <span class="visually-hidden">Логотип html academy</span>
         </a>
       </div>
     </div>

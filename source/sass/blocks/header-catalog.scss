@@ -4,18 +4,18 @@
 }
 
 .header-catalog__title {
-  padding: 70px 0;
+  padding: 74px 0 72px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .header-catalog__title {
-    padding: 101px 0 66px;
+    padding: 101px 0 86px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header-catalog__title {
-    padding: 101px 0 82px;
+    padding: 101px 0 112px;
   }
 }
