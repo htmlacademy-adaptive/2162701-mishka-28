@@ -1757,7 +1757,8 @@ body {
 }
 
 .order-form__filter,
-.order-form__form {
+.order-form__form,
+.order-form__label-title {
   position: relative;
   word-wrap: normal;
 }
