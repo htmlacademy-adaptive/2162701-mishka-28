@@ -2,3 +2,15 @@
 .social__link_telegram {
   margin-right: 4px;
 }
+
+.social__icon {
+  fill: $light-black;
+
+  &:hover {
+    fill: $puerto-rico-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

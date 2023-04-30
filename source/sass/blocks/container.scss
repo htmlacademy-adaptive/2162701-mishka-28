@@ -4,30 +4,32 @@
   margin: 0 auto;
 }
 
-.container__icon {
-  position: relative;
-}
-
 @media (min-width: $tablet-width) {
   .container__wrapper {
     padding: 0 50px;
     margin: 0 auto;
   }
 
-  .container__icon::before {
+  /*.container__icon::before {
     position: absolute;
     content: "";
-    background-image: url("../img/zigzag-white-tablet.svg");
+    background-image: url("../icons/zigzag-white-tablet.svg");
     width: 100%;
     height: 24px;
     right: 0;
     background-color: $grey;
+  }*/
+
+  .container__icon {
+    background-image: url("../icons/zigzag-white-tablet.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .container__icon::before {
-    background-image: url("../img/zigzag-white-desktop.svg");
+  .container__icon {
+    background-image: url("../icons/zigzag-white-desktop.svg");
     width: 1150px;
   }
 

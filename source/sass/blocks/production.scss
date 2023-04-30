@@ -8,13 +8,15 @@
 }
 
 .production__title {
-  padding: 21px 0 26px 91px;
+  padding: 22px 0 26px 90px;
   position: relative;
+  width: 168px;
+
 
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../img/video-icon.svg");
+    background-image: url("../icons/sprite.svg#video-icon");
     width: 32px;
     height: 22px;
     left: 34px;
@@ -24,7 +26,7 @@
 
 .production__descr {
   margin: 0;
-  padding: 35px 0 41px 33px;
+  padding: 36px 0 41px 33px;
   font-size: 13px;
   line-height: 24px;
 }
@@ -33,6 +35,7 @@
   border-style: none;
   width: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 .production__img {
@@ -45,13 +48,23 @@
 .production__image::after {
   position: absolute;
   content: "";
-  background-image: url("../img/play-video.svg");
+  background-image: url("../icons/sprite.svg#play-video");
   width: 101px;
   height: 77px;
   right: 70px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.production__image:hover::after {
+  transform: scale(1.2, 1.2) translate(-40%, -40%);
+}
+
+.production__image:active::after {
+  transform: scale(0.8, 0.8) translate(-60%, -60%);
+  opacity: 0.5;
 }
 
 .production__button {
@@ -74,7 +87,8 @@
 
   .production__title {
     order: 2;
-    padding: 37px 0 0 106px;
+    padding: 40px 0 0 106px;
+    width: 100%;
   }
 
   .production__title::before {
@@ -109,7 +123,15 @@
   .production__decor {
     display: grid;
     grid-template-columns: 65% 35%;
-    margin-bottom: 100px;
+    margin-bottom: 105px;
+  }
+
+  .production__wrapper:hover {
+    box-shadow: 0 6px 10px $light-grey;
+  }
+
+  .production__wrapper:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
   .production__image {
@@ -120,11 +142,12 @@
   .production__decor-wrapper {
     grid-column: 2/3;
     grid-row: 2/3;
-    padding: 0 58px 0 78px;
+    padding: 0 56px 0 80px;
   }
 
   .production__title {
     padding: 97px 50px 0 79px;
+    width: 238px;
   }
 
   .production__title::before {
@@ -133,6 +156,6 @@
   }
 
   .production__descr {
-    padding: 4px 0 52px 0;
+    padding: 10px 0 52px 0;
   }
 }
