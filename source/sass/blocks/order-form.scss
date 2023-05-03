@@ -233,6 +233,19 @@ input:hover ~ .order-form__icon_mail {
 }
 
 @media (min-width: $tablet-width) {
+  .order-form {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../icons/sprite.svg#zigzag-white-tablet");
+      width: 100%;
+      height: 24px;
+      background-color: $grey;
+    }
+  }
+
   .order-form__forma {
     padding: 0;
   }
@@ -244,7 +257,7 @@ input:hover ~ .order-form__icon_mail {
   }
 
   .order-form__descr {
-    padding: 54px 50px 63px;
+    padding: 80px 50px 63px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -332,7 +345,7 @@ input:hover ~ .order-form__icon_mail {
     flex-grow: 1;
   }
 
-  .order-form_wrapper {
+  .order-form__form-wrapper {
     padding-top: 34px;
     padding-bottom: 40px;
     background-color: $grey;
@@ -405,8 +418,14 @@ input:hover ~ .order-form__icon_mail {
 }
 
 @media (min-width: $desktop-width) {
+  .order-form::before {
+    background-image: url("../icons/sprite.svg#zigzag-white-desktop");
+    height: 34px;
+    background-color: $grey;
+  }
+
   .order-form__descr {
-    padding-top: 102px;
+    padding-top: 134px;
     padding-left: 225px;
     padding-right: 200px;
   }
@@ -470,7 +489,7 @@ input:hover ~ .order-form__icon_mail {
     margin-top: 0;
   }
 
-  .order-form_wrapper {
+  .order-form__form-wrapper {
     padding-bottom: 38px;
   }
 

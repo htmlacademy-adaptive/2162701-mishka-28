@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Мишка - милые штуки ручной работы для дома</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" sizes="32x32" href="favicon/favicon.svg">
   <link rel="apple-touch-icon" href="favicon/favicon-apple.png" sizes="180x180">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="main-header main-header__center">
+  <header class="main-header main-header_center">
     <div class="container main-header__container">
       <a class="main-header__logo-link" href="index.html">
         <picture>
@@ -23,7 +23,7 @@
             alt="Логотип мишка.">
         </picture>
       </a>
-      <nav class="main-nav main-nav__wrapper main-nav_closed main-nav_nojs">
+      <nav class="main-nav main-nav_closed main-nav_nojs">
         <button class="main-nav__button" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
@@ -73,10 +73,10 @@
     </div>
   </header>
 
-  <main class="main-container main-container__center">
+  <main class="main-container main-container_center">
 
     <section class="header-form header-form_margin">
-      <div class="container container__icon">
+      <div class="container">
         <h1 class="title header-form__title title_size_l">Вязание на заказ</h1>
       </div>
     </section>
@@ -180,14 +180,14 @@
               </li>
             </ul>
           </fieldset>
-          <div class="order-form_wrapper">
+          <div class="order-form__form-wrapper">
             <div class="order-form__tel-mail">
               <label class="title-form order-form__label-title order-form__label-title_phone" for="phone">
                 Тел
               </label>
               <input class="order-form__input order-form__input_phone order-form__input_grey" type="tel" id="phone" name="phone"
                 placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-                <svg class="order-form__icon_phone" width="25" height="24" id="phone">
+                <svg class="order-form__icon order-form__icon_phone" width="25" height="24">
                   <use href="icons/sprite.svg#phone"></use>
                 </svg>
             </div>
@@ -199,7 +199,7 @@
               </label>
               <input class="order-form__input order-form__input_mail order-form__input_grey" id="email" type="email"
                 placeholder="Ваш Email*" name="email" required>
-                <svg class="order-form__icon_mail" width="32" height="21" id="mail">
+                <svg class="order-form__icon order-form__icon_mail" width="32" height="21">
                   <use href="icons/sprite.svg#mail"></use>
                 </svg>
             </div>
@@ -223,12 +223,11 @@
 
   </main>
 
-  <footer class="main-footer main-footer__center">
-    <div class="container main-footer__container container__wrapper">
+  <footer class="main-footer main-footer_center">
+    <div class="container main-footer__container container_wrapper">
       <a class="main-footer__link" href="#">
-        <svg class="main-footer__icon" aria-hidden="true" focusable="false" width="102" height="34" viewBox="0 0 102 34"
-          id="footer-logo">
-          <use href="icons/sprite.svg#footerLogo"></use>
+        <svg class="main-footer__icon" aria-hidden="true" focusable="false" width="102" height="34">
+          <use href="icons/sprite.svg#mishka-logo-footer"></use>
         </svg>
       </a>
       <ul class="social main-footer__social-list">
@@ -259,9 +258,9 @@
       </ul>
       <div class="main-footer__decor">
         <span class="main-footer__text">Разработано</span>
-        <a class="main-footer__link-html" href="https://htmlacademy.ru/">
+        <a class="main-footer__link-html" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="main-footer__logo-icon" width="27" height="35" id="htmlAcademy">
-            <use href="icons/sprite.svg#htmlAcademy"></use>
+            <use href="icons/sprite.svg#htmlacademy-logo"></use>
           </svg>
             <span class="visually-hidden">Логотип html academy</span>
         </a>

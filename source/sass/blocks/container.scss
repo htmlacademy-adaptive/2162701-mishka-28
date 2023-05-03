@@ -1,39 +1,18 @@
-.container__wrapper {
+.container_wrapper {
   padding: 0 30px;
   min-width: 81%;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
-  .container__wrapper {
+  .container_wrapper {
     padding: 0 50px;
     margin: 0 auto;
-  }
-
-  /*.container__icon::before {
-    position: absolute;
-    content: "";
-    background-image: url("../icons/zigzag-white-tablet.svg");
-    width: 100%;
-    height: 24px;
-    right: 0;
-    background-color: $grey;
-  }*/
-
-  .container__icon {
-    background-image: url("../icons/zigzag-white-tablet.svg");
-    background-repeat: repeat-x;
-    background-position: bottom;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .container__icon {
-    background-image: url("../icons/zigzag-white-desktop.svg");
-    width: 1150px;
-  }
-
-  .container__wrapper {
+  .container_wrapper {
     padding: 0 50px;
     margin: 0 auto;
   }

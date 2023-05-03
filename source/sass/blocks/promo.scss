@@ -19,11 +19,10 @@
   line-height: 24px;
   display: block;
   position: relative;
+  padding: 24px 0 31px 30px;
 }
 
 .promo__item {
-  padding: 24px 9vw 31px 9vw;
-
   &_light-green {
     background-color: $downy-green;
 
@@ -34,7 +33,6 @@
 
   &_green {
     background-color: $blue-green;
-    padding-right: 7vw;
 
     &:hover {
       background-color: $puerto-rico-green;
@@ -48,13 +46,13 @@
   position: absolute;
 
   &_interior {
-    right: 8px;
-    bottom: -12px;
+    right: 36px;
+    bottom: 18px;
   }
 
   &_toys {
-    bottom: -8px;
-    right: 3px;
+    bottom: 22px;
+    right: 28px;
   }
 }
 
@@ -70,7 +68,7 @@
   .promo__container::before {
     position: absolute;
     content: "";
-    background-image: url("../icons/zigzag-white-tablet.svg");
+    background-image: url("../icons/sprite.svg#zigzag-white-tablet");
     width: 100%;
     height: 25px;
     bottom: -10px;
@@ -81,36 +79,35 @@
     padding: 0 50px;
     display: grid;
     grid-template-columns: 50% 50%;
-    margin-top: -119px;
+    margin-top: -117px;
   }
 
   .promo__link {
     font-size: 20px;
     line-height: 30px;
+    padding: 25px 0 34px 36px;
   }
 
   .promo__item {
-    padding: 26px 4vw 36px 36px;
-
     &:hover {
       transform: translateY(-5px);
     }
   }
 
   .promo__icon {
-    bottom: -8px;
+    bottom: 28px;
+  }
+
+  .promo__icon_toys {
+    right: 33px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__container::before {
-    background-image: url("../icons/zigzag-white-desktop.svg");
+    background-image: url("../icons/sprite.svg#zigzag-white-desktop");
     width: 100%;
     height: 34px;
     bottom: -16px;
-  }
-
-  .promo__icon {
-    right: -10px;
   }
 }

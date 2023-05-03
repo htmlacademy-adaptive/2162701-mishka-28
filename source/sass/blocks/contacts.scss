@@ -1,7 +1,24 @@
 .contacts {
-  background-image: url("../icons/zigzag-line.svg");
+  /*background: url("../icons/sprite.svg#zigzag-line");
   background-repeat: repeat-x;
-  background-position: top center;
+  background-position: top center;*/
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../icons/sprite.svg#zigzag-line");
+    width: 100%;
+    height: 6px;
+  }
+}
+
+@media (min-width: 500px) {
+  .contacts::before {
+    background-image: url("../icons/sprite.svg#zigzag-line-tablet");
+    width: 100%;
+    height: 17px;
+  }
 }
 
 .contacts__maps {
@@ -70,13 +87,20 @@
 .contacts__button {
   padding: 14px 49px;
   margin-bottom: 41px;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
-  .contacts {
-    background-image: url("../icons/zigzag-line-tablet.svg");
+  /*.contacts {
+    background-image: url("../icons/sprite.svg#zigzag-line-tablet");
     background-repeat: repeat-x;
-  }
+  }*/
+
+  /*.contacts::before {
+    background-image: url("../icons/sprite.svg#zigzag-line-tablet");
+    width: 100%;
+    height: 17px;
+  }*/
 
   .contacts__title {
     margin-top: 85px;
@@ -85,7 +109,7 @@
   .contacts__title::after {
     position: absolute;
     content: "";
-    background-image: url("../icons/flag.svg");
+    background-image: url("../icons/sprite.svg#flag");
     width: 47px;
     height: 81px;
     left: 92.5%;
@@ -138,14 +162,29 @@
   }
 }
 
+@media (min-width: 950px) {
+  .contacts::before {
+    background-image: url("../icons/sprite.svg#zigzag-line-desktop");
+    width: 1050px;
+    height: 23px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .contacts {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: stretch;
     align-items: stretch;
-    background-image: url("../icons/zigzag-line-desktop.svg");
-    background-repeat: no-repeat;
+    //background-image: url("../icons/sprite.svg#zigzag-line-desktop");
+    //background-repeat: no-repeat;
+  }
+
+  .contacts::before {
+    /*background-image: url("../icons/sprite.svg#zigzag-line-desktop");
+    width: 1050px;
+    height: 23px;*/
+    right: 50px;
   }
 
   .contacts__container {

@@ -66,21 +66,12 @@
   padding: 14px 78px;
   position: relative;
   margin-bottom: 45px;
+  text-decoration: none;
 }
 
 .reviews {
   position: relative;
 }
-
-/*.reviews::after {
-  position: absolute;
-  content: "";
-  background-image: url("../icons/zigzag-line.svg");
-  min-width: 100%;
-  height: 6px;
-  left: 0;
-}*/
-
 
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
@@ -93,24 +84,14 @@
     position: relative;
   }
 
-  /*.reviews::after {
-    position: absolute;
-    content: "";
-    background-image: url("../icons/zigzag-line-tablet.svg");
-    min-width: 100%;
-    height: 17px;
-    bottom: 26px;
-    left: 0;
-  }*/
-
   .reviews__image {
-    background-image: url("../icons/background/review-background.jpg");
+    background-image: url("../img/background/review-background.jpg");
     background-repeat: no-repeat;
     object-fit: cover;
     position: relative;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../icons/background/review-background@2.jpg");
+      background-image: url("../img/background/review-background@2.jpg");
       background-size: 350px 100%;
     }
   }
@@ -197,14 +178,4 @@
   .reviews__button {
     margin-top: 48px;
   }
-
-  /*.reviews::after {
-    position: absolute;
-    content: "";
-    background-image: url("../icons/zigzag-line-desktop.svg");
-    min-width: 1050px;
-    height: 23px;
-    left: 50px;
-    bottom: 70px;
-  }*/
 }
