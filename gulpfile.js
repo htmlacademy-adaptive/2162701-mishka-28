@@ -54,17 +54,17 @@ export const optimizeImages = () => {
 
 export const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-   .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'));
 }
 
 //WebP
 
 export const createwebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-   .pipe(squoosh({
-    webp: {}
-   }))
-   .pipe(gulp.dest('build/img'));
+    .pipe(squoosh({
+      webp: {}
+    }))
+    .pipe(gulp.dest('build/img'));
 }
 
 //SVG
@@ -73,7 +73,7 @@ export const stack = () => {
   return gulp.src('source/icons/*.svg')
   .pipe(svgo())
   .pipe(stacksvg({ output: `sprite` }))
-   .pipe(gulp.dest('build/icons'));
+    .pipe(gulp.dest('build/icons'));
 }
 
 //Clean
