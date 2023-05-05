@@ -30,7 +30,7 @@ export const styles = () => {
 
 // HTML
 
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
@@ -38,7 +38,7 @@ export const html = () => {
 
 //Scripts
 
-export const scripts = () => {
+const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'));
@@ -46,20 +46,20 @@ export const scripts = () => {
 
 //Images
 
-export const optimizeImages = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh())
     .pipe(gulp.dest('build/img'));
 }
 
-export const copyImages = () => {
+const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'));
 }
 
 //WebP
 
-export const createwebp = () => {
+const createwebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh({
       webp: {}
@@ -69,7 +69,7 @@ export const createwebp = () => {
 
 //SVG
 
-export const stack = () => {
+const stack = () => {
   return gulp.src('source/icons/*.svg')
   .pipe(svgo())
   .pipe(stacksvg({ output: `sprite` }))
@@ -78,13 +78,13 @@ export const stack = () => {
 
 //Clean
 
-export const clean = () => {
+const clean = () => {
   return deleteAsync('build');
 }
 
 //Copy
 
-export const copy = (done) => {
+const copy = (done) => {
   gulp.src ([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
@@ -162,5 +162,5 @@ export const detault = gulp.series (
 
 
 export default gulp.series(
-  html, styles, server, watcher
+  server, watcher
 );
