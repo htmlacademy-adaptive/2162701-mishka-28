@@ -97,7 +97,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog {
+  /*.catalog {
     position: relative;
 
     &::before {
@@ -108,10 +108,10 @@
       height: 24px;
       background-color: $grey;
     }
-  }
+  }*/
 
   .catalog__list {
-    padding-top: 92px;
+    padding-top: 82px;
   }
 
   .catalog__item {
@@ -158,15 +158,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog::before {
+  /*.catalog::before {
     background-image: url("../icons/sprite.svg#zigzag-white-desktop");
     height: 34px;
     background-color: $grey;
-  }
+  }*/
 
   .catalog__list {
     display: grid;
-    padding-top: 144px;
+    padding-top: 110px;
     grid-template-columns: repeat(3, auto);
     gap: 51px;
   }

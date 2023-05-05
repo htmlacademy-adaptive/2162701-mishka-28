@@ -9,12 +9,14 @@
 
 @media (min-width: $tablet-width) {
   .header-form__title {
-    padding: 101px 0 62px;
+    padding: 101px 0 72px;
+    background: url("../icons/sprite.svg#zigzag-white-tablet") repeat-x 0 110px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header-form__title {
-    padding-bottom: 80px;
+    padding-bottom: 108px;
+    background: url("../icons/sprite.svg#zigzag-white-desktop") repeat-x 0 122px;
   }
 }
