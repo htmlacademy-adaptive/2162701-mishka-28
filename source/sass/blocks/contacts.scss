@@ -26,6 +26,25 @@
   min-width: 100%;
 }
 
+.contacts__maps-image {
+  display: none;
+}
+
+.contacts__maps_nojs .contacts__maps-image {
+  display: block;
+}
+
+.contacts__maps_nojs .contacts__maps-maps {
+  display: none;
+}
+
+.contacts__maps-img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .contacts__title {
   margin: 45px 0 21px;
   position: relative;
