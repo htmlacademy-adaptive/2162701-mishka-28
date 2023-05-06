@@ -10,12 +10,14 @@
 
 @media (min-width: $tablet-width) {
   .header-catalog__title {
-    padding: 101px 0 86px;
+    padding: 101px 0 72px;
+    background: url("../icons/sprite.svg#zigzag-white-tablet") repeat-x 0 110px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header-catalog__title {
-    padding: 101px 0 112px;
+    padding: 101px 0 114px;
+    background: url("../icons/sprite.svg#zigzag-white-desktop") repeat-x 0 120px;
   }
 }

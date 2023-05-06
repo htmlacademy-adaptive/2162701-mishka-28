@@ -1,4 +1,4 @@
-.main-container__center {
+.main-container_center {
   margin: 0 auto;
 }
 
@@ -9,8 +9,22 @@
   flex-grow: 1;
 }
 
+.main-container__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+
 @media (min-width: $desktop-width) {
   .main-container {
+    //min-width: 1150px;
+    //box-shadow: 0 1px 0 $light-grey,
+    border-top: 1px solid $light-grey;
+  }
+
+  .main-container__wrapper {
     width: 1150px;
+    margin: 0 auto;
   }
 }

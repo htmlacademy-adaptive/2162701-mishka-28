@@ -1,4 +1,4 @@
-.main-footer__center {
+.main-footer_center {
   margin: 0 auto;
 }
 
@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
 .main-footer__social-list {
@@ -64,6 +65,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    padding: 0 50px;
   }
 
   .main-footer__link {
@@ -106,8 +108,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-footer {
+  /*.main-footer {
     width: 1150px;
+  }*/
+
+  .main-footer__container {
+    max-width: 1050px;
   }
 
   .main-footer__social-list {

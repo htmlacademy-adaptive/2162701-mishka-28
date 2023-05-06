@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Мишка - милые штуки ручной работы для дома</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" sizes="32x32" href="favicon/favicon.svg">
   <link rel="apple-touch-icon" href="favicon/favicon-apple.png" sizes="180x180">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="main-header main-header__center">
+  <header class="main-header main-header_center">
     <div class="container main-header__container">
       <a class="main-header__logo-link" href="index.html">
         <picture>
@@ -23,7 +23,7 @@
             alt="Логотип мишка.">
         </picture>
       </a>
-      <nav class="main-nav main-nav__wrapper main-nav_closed main-nav_nojs">
+      <nav class="main-nav main-nav_closed main-nav_nojs">
         <button class="main-nav__button" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
@@ -73,20 +73,29 @@
     </div>
   </header>
 
-  <main class="main-container main-container__center">
+  <main class="main-container main-container_center">
 
     <section class="header-catalog header-catalog_margin">
-      <div class="container container__icon">
+      <div class="container">
         <h1 class="title header-catalog__title title_size_l">Каталог товаров</h1>
       </div>
     </section>
 
+    <div class="main-container__wrapper">
+
     <section class="catalog">
-      <div class="container container__wrapper">
+      <div class="container container_wrapper">
         <ul class="catalog__list">
           <li class="catalog__item">
             <div class="catalog__image">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/catalog/photo-1-desktop.webp 1x, img/catalog/photo-1-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/photo-1-tablet.webp 1x, img/catalog/photo-1-tablet@2.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog/photo-1-mobile.webp 1x, img/catalog/photo-1-mobile@2.webp 2x">
+
                 <source media="(min-width:1150px)"
                   srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2.jpg 2x" width="316"
                   height="462">
@@ -105,7 +114,7 @@
               <div class="catalog__decor">
                 <span class="catalog__price">1 200 руб.</span>
                 <button class="catalog__button-basket" type="button" aria-label="добавить в корзину">
-                  <svg class="catalog__icon-basket" width="20" height="19" id="basket">
+                  <svg class="catalog__icon-basket" width="20" height="19">
                     <use href="icons/sprite.svg#basket"></use>
                   </svg>
                 </button>
@@ -115,6 +124,13 @@
           <li class="catalog__item">
             <div class="catalog__image">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/catalog/photo-2-desktop.webp 1x, img/catalog/photo-2-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/photo-21-tablet.webp 1x, img/catalog/photo-2-tablet@2.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog/photo-2-mobile.webp 1x, img/catalog/photo-2-mobile@2.webp 2x">
+
                 <source media="(min-width:1150px)"
                   srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2.jpg 2x" width="315"
                   height="462">
@@ -143,6 +159,13 @@
           <li class="catalog__item">
             <div class="catalog__image">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)"
+                  srcset="img/catalog/photo-3-desktop.webp 1x, img/catalog/photo-31-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/photo-3-tablet.webp 1x, img/catalog/photo-3-tablet@2.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog/photo-3-mobile.webp 1x, img/catalog/photo-3-mobile@2.webp 2x">
+
                 <source media="(min-width:1150px)"
                   srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2.jpg 2x" width="316"
                   height="462">
@@ -175,39 +198,46 @@
 
     </section>
 
-    <article class="production container container__wrapper">
+    <article class="production container container_wrapper">
       <div class="production__wrapper">
-      <div class="production__decor">
-        <h2 class="title-catalog production__title">Процесс производства</h2>
-        <div class="production__image">
-          <picture>
-            <source media="(min-width:1150px)"
-              srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2.jpg 2x" width="682" height="455">
-            <source media="(min-width:768px)"
-              srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2.jpg 2x" width="668" height="455">
-            <img class="production__img" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2.jpg 2x"
-              width="260" height="150" alt="вязанная корзина.">
-          </picture>
+        <div class="production__decor">
+          <h2 class="title-catalog production__title">Процесс производства</h2>
+          <div class="production__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/catalog/video-desktop.webp 1x, img/catalog/video-desktop@2.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/catalog/video-tablet.webp 1x, img/catalog/video-tablet@2.webp 2x">
+              <source type="image/webp" srcset="img/catalog/video-mobile.webp 1x, img/catalog/video-mobile@2.webp 2x">
 
+              <source media="(min-width:1150px)"
+                srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2.jpg 2x" width="682" height="455">
+              <source media="(min-width:768px)"
+                srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2.jpg 2x" width="668" height="455">
+              <img class="production__img" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2.jpg 2x"
+                width="260" height="150" alt="вязанная корзина.">
+            </picture>
+
+          </div>
+          <div class="production__decor-wrapper">
+            <p class="production__descr">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <button class="button production__button" type="button">Сделать заказ</button>
+          </div>
         </div>
-        <div class="production__decor-wrapper">
-          <p class="production__descr">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-          </p>
-          <button class="button production__button" type="button">Сделать заказ</button>
-        </div>
-      </div>
       </div>
     </article>
 
+    </div>
+
   </main>
 
-  <footer class="main-footer main-footer__center">
-    <div class="container main-footer__container container__wrapper">
+  <footer class="main-footer main-footer_center">
+    <div class="container main-footer__container">
       <a class="main-footer__link" href="#">
-        <svg class="main-footer__icon" aria-hidden="true" focusable="false" width="102" height="34" viewBox="0 0 102 34"
-          id="footer-logo">
-          <use href="icons/sprite.svg#footerLogo"></use>
+        <svg class="main-footer__icon" aria-hidden="true" focusable="false" width="102" height="34">
+          <use href="icons/sprite.svg#mishka-logo-footer"></use>
         </svg>
       </a>
       <ul class="social main-footer__social-list">
@@ -238,9 +268,9 @@
       </ul>
       <div class="main-footer__decor">
         <span class="main-footer__text">Разработано</span>
-        <a class="main-footer__link-html" href="https://htmlacademy.ru/">
+        <a class="main-footer__link-html" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="main-footer__logo-icon" width="27" height="35" id="htmlAcademy">
-            <use href="icons/sprite.svg#htmlAcademy"></use>
+            <use href="icons/sprite.svg#htmlacademy-logo"></use>
           </svg>
           <span class="visually-hidden">Логотип html academy</span>
         </a>
@@ -248,7 +278,7 @@
     </div>
   </footer>
 
-  <div class="modal modal__open">
+  <div class="modal modal_open">
     <section class="modal__feedback">
       <h2 class="title modal__title">Добавить в корзину</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
