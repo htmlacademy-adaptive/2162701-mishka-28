@@ -1,0 +1,1 @@
+let button=document.querySelector(".week-product__button"),modal=document.querySelector(".modal");button.addEventListener("click",(function(){modal.classList.remove("modal_open"),document.body.style.overflow="hidden"})),modal.onclick=function(o){o.target==modal&&(modal.classList.add("modal_open"),document.body.style.overflow="")};
