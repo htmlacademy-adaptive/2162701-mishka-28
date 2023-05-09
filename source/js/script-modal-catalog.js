@@ -1,19 +1,7 @@
 //open modal catalog
 
-let button = document.querySelector('.catalog__button-basket');
 let modal = document.querySelector('.modal');
-
-
-button.addEventListener("click", function () {
-  modal.classList.remove('modal_open');
-  document.body.style.overflow = 'hidden';
-});
-
-
-/*button.onclick = function () {
-  modal.classList.remove('modal_open');
-  document.body.style.overflow = 'hidden';
-};*/
+let button = document.querySelectorAll('.catalog__button-basket');
 
 window.onclick = function (event) {
   if (event.target == modal) {
@@ -21,3 +9,10 @@ window.onclick = function (event) {
     document.body.style.overflow = '';
   }
 };
+
+button.forEach(button => {
+  button.addEventListener('click',function () {
+  modal.classList.remove('modal_open');
+  document.body.style.overflow = 'hidden';
+  })
+})
