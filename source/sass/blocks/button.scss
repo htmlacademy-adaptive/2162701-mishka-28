@@ -10,6 +10,7 @@
   border: 2px solid $anthracite;
   display: inline-block;
   cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
 
   &:hover {
     color: $white;
@@ -29,6 +30,7 @@
   background-color: $downy-green;
   color: $white;
   box-shadow: inset 0 0 0 2px $downy-green;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .button_green:hover {
