@@ -11,13 +11,21 @@
 @media (min-width: $tablet-width) {
   .header-catalog__title {
     padding: 101px 0 72px;
-    background: url("../icons/sprite.svg#zigzag-white-tablet") repeat-x 0 110px;
+    background: url("../icons/sprite.svg#zigzag-white-tablet") repeat-x bottom/768px 24px;
   }
+
+  /*.header-catalog {
+    background: url("../icons/sprite.svg#zigzag-white-tablet") repeat-x bottom/768px $grey;
+  }*/
 }
 
 @media (min-width: $desktop-width) {
   .header-catalog__title {
     padding: 101px 0 114px;
-    background: url("../icons/sprite.svg#zigzag-white-desktop") repeat-x 0 120px;
+    background: url("../icons/sprite.svg#zigzag-white-desktop") repeat-x bottom/1050px 34px;
   }
+
+  /*.header-catalog {
+    background: url("../icons/sprite.svg#zigzag-white-desktop") repeat-x bottom/1050px $grey;
+  }*/
 }
