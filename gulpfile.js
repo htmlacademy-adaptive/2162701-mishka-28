@@ -144,7 +144,7 @@ export const build = gulp.series (
 
 //Detault
 
-export const detault = gulp.series (
+export const dev = gulp.series (
   clean,
   copy,
   copyImages,
@@ -159,9 +159,4 @@ export const detault = gulp.series (
     server,
     watcher
   )
-);
-
-
-export default gulp.series(
-  server, watcher
 );
