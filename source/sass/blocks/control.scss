@@ -42,6 +42,15 @@
   border-color: $downy-light-green;
 }
 
+.control__input-radio:disabled + .control__mark-radio,
+.control__input-checkbox:disabled + .control__mark-checkbox {
+  border-color: $silver;
+}
+
+.control input[type="radio"]:checked:disabled + .control__mark-radio::after {
+  background-color: $downy-light-green;
+}
+
 .control input[type="checkbox"]:checked + .control__mark-checkbox::after {
   position: absolute;
   content: "";

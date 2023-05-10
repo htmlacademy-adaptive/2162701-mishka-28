@@ -1,13 +1,3 @@
-/*.order-form__descr,
-.order-form__radio,
-.order-form__checkbox,
-.order-form__name,
-.order-form__tel-mail,
-.order-form__feedback,
-.order-form__decor {
-  margin: 0 auto;
-}*/
-
 .order-form__descr {
   font-size: 13px;
   line-height: 24px;
@@ -123,7 +113,7 @@
   color: $anthracite;
   font-size: 17px;
   line-height: 18px;
-  font-family: "open sans", sans-serif;
+  font-family: "open sans", "arial", "tahoma", sans-serif;
   border-bottom: 2px solid $black;
 
   &:focus {
@@ -243,19 +233,6 @@ input:hover ~ .order-form__icon_mail {
 }
 
 @media (min-width: $tablet-width) {
-  /*.order-form {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../icons/sprite.svg#zigzag-white-tablet");
-      width: 100%;
-      height: 24px;
-      background-color: $grey;
-    }
-  }*/
-
   .order-form__forma {
     padding: 0;
   }
@@ -434,12 +411,6 @@ input:hover ~ .order-form__icon_mail {
     align-items: center;
   }
 
-  //.order-form__descr,
-  //.order-form__filter-checkbox,
-  //.order-form__name,
-  //.order-form__tel-mail,
-  //.order-form__feedback,
-  //.order-form__decor {
   .order-form__radio {
     width: 1050px;
     margin: 0 auto;
@@ -449,12 +420,6 @@ input:hover ~ .order-form__icon_mail {
     width: 100vw;
     padding: 0;
   }
-
-  /*.order-form::before {
-    background-image: url("../icons/sprite.svg#zigzag-white-desktop");
-    height: 34px;
-    background-color: $grey;
-  }*/
 
   .order-form__descr-wrapper {
     margin: 0 auto;
